@@ -1,0 +1,138 @@
+<nav
+  [class]="isScrolled()
+    ? 'fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300'
+    : 'fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm transition-all duration-300'"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-20">
+
+      <!-- Logo -->
+      <a routerLink="/" (click)="closeAll()" class="flex items-center gap-2 shrink-0">
+        <img src="logo.png" alt="SynBio LATAM" class="h-10 w-auto" />
+        <div class="hidden sm:block">
+          <span class="block text-sm font-700 leading-tight" style="color:#085041">SynBio LATAM</span>
+          <span class="block text-xs font-400 leading-tight" style="color:#1D9E75">Asociación Latinoamericana</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav -->
+      <div class="hidden lg:flex items-center gap-1">
+
+        <!-- Inicio dropdown -->
+        <div class="relative">
+          <button
+            (click)="toggleDropdown('inicio')"
+            class="flex items-center gap-1 px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors cursor-pointer"
+          >
+            Inicio
+            <svg [class]="inicioOpen() ? 'rotate-180 transition-transform' : 'transition-transform'" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M6 8L1 3h10z"/></svg>
+          </button>
+          @if (inicioOpen()) {
+            <div class="absolute top-full left-0 mt-1 w-48 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+              <a href="/#quienes-somos" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">¿Quiénes somos?</a>
+              <a href="/#pilares" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Cómo lo hacemos</a>
+              <a href="/#equipo-mapa" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Equipo en el mapa</a>
+              <a href="/#equipo" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Nuestro equipo</a>
+              <a href="/#aliados" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Aliados</a>
+            </div>
+          }
+        </div>
+
+        <!-- Eventos dropdown -->
+        <div class="relative">
+          <button
+            (click)="toggleDropdown('eventos')"
+            class="flex items-center gap-1 px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors cursor-pointer"
+          >
+            Eventos
+            <svg [class]="eventosOpen() ? 'rotate-180 transition-transform' : 'transition-transform'" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M6 8L1 3h10z"/></svg>
+          </button>
+          @if (eventosOpen()) {
+            <div class="absolute top-full left-0 mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+              <a routerLink="/eventos/calendario" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Calendario de eventos</a>
+              <a routerLink="/eventos/anteriores" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Eventos anteriores</a>
+            </div>
+          }
+        </div>
+
+        <!-- Mapa SynBio -->
+        <a routerLink="/mapa" (click)="closeAll()" class="px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors">
+          Mapa SynBio
+        </a>
+
+        <!-- Recursos dropdown -->
+        <div class="relative">
+          <button
+            (click)="toggleDropdown('recursos')"
+            class="flex items-center gap-1 px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors cursor-pointer"
+          >
+            Recursos
+            <svg [class]="recursosOpen() ? 'rotate-180 transition-transform' : 'transition-transform'" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M6 8L1 3h10z"/></svg>
+          </button>
+          @if (recursosOpen()) {
+            <div class="absolute top-full left-0 mt-1 w-48 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+              <a routerLink="/recursos/cursos" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Cursos</a>
+              <a routerLink="/recursos/publicaciones" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Publicaciones</a>
+            </div>
+          }
+        </div>
+
+        <!-- Newsletter -->
+        <a routerLink="/newsletter" (click)="closeAll()" class="px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors">
+          Newsletter
+        </a>
+      </div>
+
+      <!-- CTA button desktop -->
+      <div class="hidden lg:block">
+        <a
+          routerLink="/unete"
+          (click)="closeAll()"
+          class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-600 text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
+          style="background-color: #085041;"
+        >
+          Únete
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8l6 4-6 4z"/></svg>
+        </a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button
+        (click)="toggleMobile()"
+        class="lg:hidden p-2 rounded-lg hover:bg-green-50 transition-colors"
+        aria-label="Menú"
+      >
+        @if (!mobileOpen()) {
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#085041" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        } @else {
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#085041" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        }
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  @if (mobileOpen()) {
+    <div class="lg:hidden bg-white border-t border-gray-100 px-4 py-4 space-y-1">
+      <div class="text-xs font-600 uppercase tracking-widest text-gray-400 px-3 pb-2">Inicio</div>
+      <a href="/#quienes-somos" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">¿Quiénes somos?</a>
+      <a href="/#pilares" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Cómo lo hacemos</a>
+      <a href="/#equipo-mapa" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Equipo en el mapa</a>
+      <a href="/#equipo" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Nuestro equipo</a>
+      <a href="/#aliados" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Aliados</a>
+      <div class="text-xs font-600 uppercase tracking-widest text-gray-400 px-3 pt-3 pb-2">Eventos</div>
+      <a routerLink="/eventos/calendario" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Calendario de eventos</a>
+      <a routerLink="/eventos/anteriores" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Eventos anteriores</a>
+      <a routerLink="/mapa" (click)="closeAll()" class="block px-3 py-2 text-sm font-500 text-gray-700 hover:bg-green-50 rounded-lg">Mapa SynBio</a>
+      <div class="text-xs font-600 uppercase tracking-widest text-gray-400 px-3 pt-3 pb-2">Recursos</div>
+      <a routerLink="/recursos/cursos" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Cursos</a>
+      <a routerLink="/recursos/publicaciones" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Publicaciones</a>
+      <a routerLink="/newsletter" (click)="closeAll()" class="block px-3 py-2 text-sm font-500 text-gray-700 hover:bg-green-50 rounded-lg">Newsletter</a>
+      <div class="pt-3">
+        <a routerLink="/unete" (click)="closeAll()" class="block text-center px-4 py-3 rounded-full text-sm font-600 text-white" style="background-color:#085041">
+          Únete
+        </a>
+      </div>
+    </div>
+  }
+</nav>

@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "WebFetch(domain:atgsynbio.com)",
+      "Bash(curl -s -L \"https://atgsynbio.com/\")",
+      "Bash(python3 -c ' *)",
+      "Bash(sed 's/<[^>]*>//g')",
+      "Bash(grep -v \"^$\")",
+      "Bash(python3)",
+      "Read(//tmp/**)",
+      "Bash(curl -s \"https://atgsynbio.com/\")",
+      "Bash(grep -i \"data\\\\|color\\\\|rgb\\\\|#[0-9a-f]\\\\{3,6\\\\}\")",
+      "Bash(cp \"C:\\\\dev\\\\repos\\\\synbiolatam\\\\docx_img_image10.jpg\" \"C:\\\\dev\\\\repos\\\\synbiolatam\\\\public\\\\logo.jpg\")",
+      "Bash(mkdir -p \"C:\\\\dev\\\\repos\\\\synbiolatam\\\\src\\\\app\\\\components\\\\navbar\" \"C:\\\\dev\\\\repos\\\\synbiolatam\\\\src\\\\app\\\\components\\\\footer\" \"C:\\\\dev\\\\repos\\\\synbiolatam\\\\src\\\\app\\\\components\\\\latam-map\" \"C:\\\\dev\\\\repos\\\\synbiolatam\\\\src\\\\app\\\\pages\\\\home\")",
+      "Bash(npm run *)",
+      "Bash(npm start *)",
+      "Bash(^d\")",
+      "Bash(node -e ' *)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+      "Bash(python3 -c \"import sys; print\\(sys.version\\)\")",
+      "Bash(python3 -c \"from PIL import Image; print\\('PIL ok'\\)\")",
+      "Bash(python3 -c \"import rembg; print\\('rembg ok'\\)\")",
+      "Bash(python3 -c \"import sys; sys.stdout.buffer.write\\(sys.stdin.buffer.read\\(\\)\\)\")",
+      "Bash(mv \"Anaís Caviedes .jpeg\" \"Anaís Caviedes.jpeg\")",
+      "Bash(mv \"Adriana Marcela Martinez Botello .jpeg\" \"Adriana Marcela Martinez Botello.jpeg\")",
+      "Bash(mv \"Blanzaco Tomás.jpg.png\" \"Blanzaco Tomas.png\")",
+      "Bash(npx ng *)",
+      "Bash(python3 *)"
+    ]
+  }
+}

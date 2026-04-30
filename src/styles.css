@@ -1,3 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+
+@theme {
+  --color-green-deep: #04342C;
+  --color-green-dark: #085041;
+  --color-green: #1D9E75;
+  --color-green-mid: #5DCAA5;
+  --color-green-light: #E1F5EE;
+
+  --font-sans: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+}
+
+/* DNA column animation — scrolls upward infinitely */
+@keyframes dna-up {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
+}
+
+.dna-col {
+  animation-name: dna-up;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}

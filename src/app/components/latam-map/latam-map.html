@@ -1,0 +1,143 @@
+<div class="relative map-wrapper select-none" style="max-width:560px; margin:0 auto;">
+
+  <!-- SVG Map of Latin America -->
+  <svg
+    viewBox="0 0 560 720"
+    xmlns="http://www.w3.org/2000/svg"
+    class="w-full h-auto"
+    style="filter: drop-shadow(0 4px 24px rgba(4,52,44,0.13));"
+  >
+    <!-- Mexico -->
+    <path id="MX"
+      d="M60,40 L180,38 L195,55 L200,80 L185,100 L170,95 L155,110 L140,108 L120,118 L100,115 L85,125 L70,120 L55,108 L45,90 L48,70 Z"
+      [attr.fill]="getFill('MX')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'MX')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'MX')"/>
+    <!-- Guatemala -->
+    <path id="GT"
+      d="M140,108 L155,110 L160,125 L148,132 L136,128 L132,118 Z"
+      [attr.fill]="getFill('GT')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'GT')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'GT')"/>
+    <!-- El Salvador -->
+    <path id="SV"
+      d="M148,132 L160,125 L165,136 L154,142 Z"
+      [attr.fill]="getFill('SV')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'SV')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'SV')"/>
+    <!-- Honduras -->
+    <path id="HN"
+      d="M155,110 L170,108 L178,118 L172,130 L160,125 Z"
+      [attr.fill]="getFill('HN')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'HN')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'HN')"/>
+    <!-- Nicaragua -->
+    <path id="NI"
+      d="M160,125 L172,130 L176,145 L162,152 L154,142 L165,136 Z"
+      [attr.fill]="getFill('NI')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'NI')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'NI')"/>
+    <!-- Costa Rica -->
+    <path id="CR"
+      d="M162,152 L176,145 L180,160 L170,168 L160,163 Z"
+      [attr.fill]="getFill('CR')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'CR')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'CR')"/>
+    <!-- Panama -->
+    <path id="PA"
+      d="M170,168 L180,160 L196,165 L200,175 L183,178 Z"
+      [attr.fill]="getFill('PA')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'PA')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'PA')"/>
+    <!-- Colombia -->
+    <path id="CO"
+      d="M183,178 L200,175 L218,172 L230,185 L228,210 L210,222 L192,218 L178,206 L176,192 Z"
+      [attr.fill]="getFill('CO')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'CO')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'CO')"/>
+    <!-- Venezuela -->
+    <path id="VE"
+      d="M218,172 L248,168 L270,175 L272,192 L255,205 L230,210 L228,185 Z"
+      [attr.fill]="getFill('VE')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'VE')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'VE')"/>
+    <!-- Ecuador -->
+    <path id="EC"
+      d="M178,218 L192,218 L195,240 L180,252 L168,242 L170,226 Z"
+      [attr.fill]="getFill('EC')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'EC')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'EC')"/>
+    <!-- Peru -->
+    <path id="PE"
+      d="M168,242 L180,252 L195,260 L200,295 L185,320 L165,325 L148,310 L145,280 L150,258 Z"
+      [attr.fill]="getFill('PE')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'PE')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'PE')"/>
+    <!-- Bolivia -->
+    <path id="BO"
+      d="M195,260 L225,255 L240,270 L238,305 L220,318 L200,315 L185,320 L200,295 Z"
+      [attr.fill]="getFill('BO')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'BO')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'BO')"/>
+    <!-- Brazil -->
+    <path id="BR"
+      d="M255,205 L310,195 L360,210 L390,240 L395,285 L375,335 L340,370 L295,382 L255,368 L230,340 L220,318 L238,305 L240,270 L225,255 L210,222 L228,210 Z"
+      [attr.fill]="getFill('BR')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'BR')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'BR')"/>
+    <!-- Paraguay -->
+    <path id="PY"
+      d="M220,318 L238,305 L255,318 L252,345 L232,350 L218,338 Z"
+      [attr.fill]="getFill('PY')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'PY')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'PY')"/>
+    <!-- Chile -->
+    <path id="CL"
+      d="M148,310 L165,325 L172,355 L168,400 L160,450 L148,490 L138,520 L130,550 L125,590 L118,560 L122,510 L128,468 L132,420 L136,375 L138,340 Z"
+      [attr.fill]="getFill('CL')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'CL')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'CL')"/>
+    <!-- Argentina -->
+    <path id="AR"
+      d="M165,325 L185,320 L200,315 L218,338 L232,350 L235,385 L228,420 L218,460 L205,495 L190,530 L175,555 L160,575 L148,555 L148,510 L148,490 L160,450 L168,400 L172,355 Z"
+      [attr.fill]="getFill('AR')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'AR')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'AR')"/>
+    <!-- Uruguay -->
+    <path id="UY"
+      d="M232,350 L252,345 L258,365 L248,380 L230,375 Z"
+      [attr.fill]="getFill('UY')" stroke="white" stroke-width="1.5" class="cursor-pointer transition-all duration-200"
+      (mouseenter)="onCountryHover($event,'UY')" (mouseleave)="onCountryLeave()" (mousemove)="onMouseMove($event,'UY')"/>
+
+    <!-- Labels -->
+    <text x="115" y="82" font-size="9" fill="white" font-family="Poppins,sans-serif" font-weight="600" text-anchor="middle" pointer-events="none">MX</text>
+    <text x="285" y="290" font-size="10" fill="white" font-family="Poppins,sans-serif" font-weight="600" text-anchor="middle" pointer-events="none">BR</text>
+    <text x="185" y="290" font-size="8" fill="white" font-family="Poppins,sans-serif" font-weight="600" text-anchor="middle" pointer-events="none">PE</text>
+    <text x="192" y="430" font-size="8" fill="white" font-family="Poppins,sans-serif" font-weight="600" text-anchor="middle" pointer-events="none">AR</text>
+    <text x="148" y="410" font-size="7" fill="white" font-family="Poppins,sans-serif" font-weight="600" text-anchor="middle" pointer-events="none">CL</text>
+  </svg>
+
+  <!-- Tooltip -->
+  @if (activeCountry && activeCountry.members.length > 0) {
+    <div
+      class="absolute pointer-events-none z-30 rounded-2xl shadow-2xl p-4 w-64"
+      style="background:#04342C; border:1px solid rgba(93,202,165,0.25);"
+      [ngStyle]="{ left: tooltipX() + 'px', top: tooltipY() + 'px' }"
+    >
+      <div class="flex items-center gap-2 mb-3 pb-2.5" style="border-bottom:1px solid rgba(93,202,165,0.15);">
+        <span class="text-xl">{{ activeCountry.flag }}</span>
+        <span class="font-700 text-white text-sm">{{ activeCountry.label }}</span>
+        <span class="ml-auto text-xs font-600 px-2 py-0.5 rounded-full" style="background:rgba(29,158,117,0.2);color:#5DCAA5;">
+          {{ activeCountry.members.length }} {{ activeCountry.members.length === 1 ? 'miembro' : 'miembros' }}
+        </span>
+      </div>
+      <div class="space-y-2 max-h-56 overflow-y-auto">
+        @for (member of activeCountry.members; track member.name) {
+          <div class="flex items-center gap-2.5">
+            <!-- Avatar: foto real o silueta SVG -->
+            <div class="w-8 h-8 rounded-full overflow-hidden border shrink-0 flex items-center justify-center"
+                 style="border-color:rgba(93,202,165,0.3);background:#085041;">
+              @if (member.photo) {
+                <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover object-top" />
+              } @else {
+                <!-- Vector persona -->
+                <svg viewBox="0 0 32 32" width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="16" cy="12" r="6" fill="#5DCAA5" opacity="0.7"/>
+                  <path d="M4 28 C4 20 28 20 28 28" fill="#5DCAA5" opacity="0.5"/>
+                </svg>
+              }
+            </div>
+            <div>
+              <p class="text-xs font-600 text-white leading-tight">{{ member.name }}</p>
+              <p class="text-xs leading-tight" style="color:#5DCAA5;">{{ member.role }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>

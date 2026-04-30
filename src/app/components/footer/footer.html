@@ -1,0 +1,64 @@
+<footer style="background-color:#04342C">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="logo.png" alt="SynBio LATAM" class="h-12 w-auto" />
+          <div>
+            <p class="font-700 text-white text-lg leading-tight">SynBio LATAM</p>
+            <p class="text-sm leading-tight" style="color:#5DCAA5">Asociación Latinoamericana</p>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed max-w-sm" style="color:#5DCAA5">
+          Impulsamos el desarrollo científico, educativo y profesional de la biología sintética en Latinoamérica.
+        </p>
+        <a
+          href="mailto:contacto@synbiolatam.org"
+          class="inline-flex items-center gap-2 mt-5 text-sm font-500 transition-colors hover:text-white"
+          style="color:#1D9E75"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          contacto@synbiolatam.org
+        </a>
+      </div>
+
+      <!-- Navegación -->
+      <div>
+        <h3 class="text-xs font-700 uppercase tracking-widest mb-4" style="color:#1D9E75">Navegación</h3>
+        <ul class="space-y-2">
+          <li><a href="/#quienes-somos" class="text-sm transition-colors hover:text-white" style="color:#5DCAA5">¿Quiénes somos?</a></li>
+          <li><a href="/#pilares" class="text-sm transition-colors hover:text-white" style="color:#5DCAA5">Cómo lo hacemos</a></li>
+          <li><a href="/#equipo-mapa" class="text-sm transition-colors hover:text-white" style="color:#5DCAA5">Equipo en el mapa</a></li>
+          <li><a href="/#equipo" class="text-sm transition-colors hover:text-white" style="color:#5DCAA5">Nuestro equipo</a></li>
+          <li><a href="/#aliados" class="text-sm transition-colors hover:text-white" style="color:#5DCAA5">Aliados</a></li>
+        </ul>
+      </div>
+
+      <!-- Aliados -->
+      <div>
+        <h3 class="text-xs font-700 uppercase tracking-widest mb-4" style="color:#1D9E75">Aliados</h3>
+        <ul class="space-y-3">
+          <li><span class="text-sm" style="color:#5DCAA5">AllBiotech</span></li>
+          <li><span class="text-sm" style="color:#5DCAA5">Génesis Clúster</span></li>
+          <li><span class="text-sm" style="color:#5DCAA5">IGBM</span></li>
+          <li><span class="text-sm" style="color:#5DCAA5">Soc. Boliviana de Biología Molecular</span></li>
+          <li><span class="text-sm" style="color:#5DCAA5">BioMASTER</span></li>
+          <li><span class="text-sm" style="color:#5DCAA5">iGEM</span></li>
+          <li><span class="text-sm" style="color:#5DCAA5">MINTA</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs" style="color:#5DCAA5">
+        © {{ currentYear }} SynBio LATAM. Todos los derechos reservados.
+      </p>
+      <a routerLink="/unete" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-600 text-white transition-all hover:scale-105" style="background-color:#1D9E75">
+        Únete a la red
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
