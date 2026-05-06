@@ -28,12 +28,14 @@
             <svg [class]="inicioOpen() ? 'rotate-180 transition-transform' : 'transition-transform'" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M6 8L1 3h10z"/></svg>
           </button>
           @if (inicioOpen()) {
-            <div class="absolute top-full left-0 mt-1 w-48 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+            <div class="absolute top-full left-0 mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
               <a href="/#quienes-somos" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">¿Quiénes somos?</a>
               <a href="/#pilares" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Cómo lo hacemos</a>
               <a href="/#equipo-mapa" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Equipo en el mapa</a>
               <a href="/#equipo" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Nuestro equipo</a>
               <a href="/#aliados" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Aliados</a>
+              <a href="/#eventos" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Eventos</a>
+              <a href="/#newsletter" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Newsletter</a>
             </div>
           }
         </div>
@@ -49,6 +51,8 @@
           </button>
           @if (eventosOpen()) {
             <div class="absolute top-full left-0 mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+              <a href="/#eventos" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Ver eventos</a>
+              <div class="my-1 border-t border-gray-100"></div>
               <a routerLink="/eventos/calendario" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Calendario de eventos</a>
               <a routerLink="/eventos/anteriores" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Eventos anteriores</a>
             </div>
@@ -56,7 +60,7 @@
         </div>
 
         <!-- Mapa SynBio -->
-        <a routerLink="/mapa" (click)="closeAll()" class="px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors">
+        <a href="/#equipo-mapa" (click)="closeAll()" class="px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors">
           Mapa SynBio
         </a>
 
@@ -72,13 +76,13 @@
           @if (recursosOpen()) {
             <div class="absolute top-full left-0 mt-1 w-48 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
               <a routerLink="/recursos/cursos" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Cursos</a>
-              <a routerLink="/recursos/publicaciones" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Publicaciones</a>
+              <a routerLink="/recursos/base-de-datos" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Base de datos</a>
             </div>
           }
         </div>
 
         <!-- Newsletter -->
-        <a routerLink="/newsletter" (click)="closeAll()" class="px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors">
+        <a href="/#newsletter" (click)="closeAll()" class="px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors">
           Newsletter
         </a>
       </div>
@@ -120,14 +124,17 @@
       <a href="/#equipo-mapa" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Equipo en el mapa</a>
       <a href="/#equipo" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Nuestro equipo</a>
       <a href="/#aliados" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Aliados</a>
+      <a href="/#eventos" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Eventos</a>
+      <a href="/#newsletter" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Newsletter</a>
       <div class="text-xs font-600 uppercase tracking-widest text-gray-400 px-3 pt-3 pb-2">Eventos</div>
+      <a href="/#eventos" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Ver eventos</a>
       <a routerLink="/eventos/calendario" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Calendario de eventos</a>
       <a routerLink="/eventos/anteriores" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Eventos anteriores</a>
-      <a routerLink="/mapa" (click)="closeAll()" class="block px-3 py-2 text-sm font-500 text-gray-700 hover:bg-green-50 rounded-lg">Mapa SynBio</a>
+      <a href="/#equipo-mapa" (click)="closeAll()" class="block px-3 py-2 text-sm font-500 text-gray-700 hover:bg-green-50 rounded-lg">Mapa SynBio</a>
       <div class="text-xs font-600 uppercase tracking-widest text-gray-400 px-3 pt-3 pb-2">Recursos</div>
       <a routerLink="/recursos/cursos" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Cursos</a>
-      <a routerLink="/recursos/publicaciones" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Publicaciones</a>
-      <a routerLink="/newsletter" (click)="closeAll()" class="block px-3 py-2 text-sm font-500 text-gray-700 hover:bg-green-50 rounded-lg">Newsletter</a>
+      <a routerLink="/recursos/base-de-datos" (click)="closeAll()" class="block px-3 py-2 text-sm text-gray-700 hover:bg-green-50 rounded-lg">Base de datos</a>
+      <a href="/#newsletter" (click)="closeAll()" class="block px-3 py-2 text-sm font-500 text-gray-700 hover:bg-green-50 rounded-lg">Newsletter</a>
       <div class="pt-3">
         <a routerLink="/unete" (click)="closeAll()" class="block text-center px-4 py-3 rounded-full text-sm font-600 text-white" style="background-color:#085041">
           Únete

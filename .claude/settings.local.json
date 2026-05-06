@@ -27,7 +27,24 @@
       "Bash(mv \"Adriana Marcela Martinez Botello .jpeg\" \"Adriana Marcela Martinez Botello.jpeg\")",
       "Bash(mv \"Blanzaco Tomás.jpg.png\" \"Blanzaco Tomas.png\")",
       "Bash(npx ng *)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(cp \"team photos updated/Alessia Vásquez.jpg\" \"public/equipo/Alessia Vásquez.jpg\")",
+      "Bash(cp \"team photos updated/Alonso Segura_.jpg\" \"public/equipo/Alonso Segura.jpg\")",
+      "Bash(cp \"team photos updated/Ana Patricia Minaya De La Peña.jpg\" \"public/equipo/Ana Minaya De La Peña.jpg\")",
+      "Bash(cp \"team photos updated/Anahi Najera.jpg\" \"public/equipo/Anahi Najera.jpg\")",
+      "Bash(cp \"team photos updated/Andrea Guallasamín.jpg\" \"public/equipo/Andrea Guallasamin.jpg\")",
+      "Bash(cp \"team photos updated/Alejandra Cazares.png\" \"public/equipo/Alejandra Cazares.png\")",
+      "Bash(cp \"team photos updated/BELÉN ENDARA_.png\" \"public/equipo/Belén Endara.png\")",
+      "Bash(cp \"team photos updated/Blanzaco Tomás.jpg.png\" \"public/equipo/Blanzaco Tomas.png\")",
+      "Bash(cp \"team photos updated/carlos_moya.png\" \"public/equipo/Carlos Moya.png\")",
+      "Bash(cp \"team photos updated/Catalina Serrano Foto.png\" \"public/equipo/Catalina Serrano Foto.png\")",
+      "Bash(grep -E \"\\\\.jpg$\")",
+      "Bash(cp \"team photos updated/Alon Segura_.jpg\" \"public/equipo/Alonso Segura.jpg\")",
+      "Bash(cp \"team photos updated/Angie Pozo Cedeño.jpg\" \"public/equipo/Angie Pozo Cedeño.jpg\")",
+      "Bash(cp \"team photos updated/armaan melwani.jpg\" \"public/equipo/armaan melwani.jpg\")",
+      "Bash(cp \"team photos updated/Camila Naranjo.jpg\" \"public/equipo/Camila Naranjo.jpg\")",
+      "Bash(cp \"team photos updated/Caren Moreno.jpg\" \"public/equipo/Caren Moreno.jpg\")",
+      "Bash(grep -iE \"\\\\.\\(jpeg|jpg|JPG\\)$\")"
     ]
   }
 }
