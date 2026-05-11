@@ -73,7 +73,7 @@ export class Home {
 
   fundadores: TeamMember[] = [
     { name: 'Alonso Segura', role: 'Co-Fundador', country: 'Costa Rica', flag: '🇨🇷', initials: 'AS', photo: 'equipo/Alonso Segura.jpg' },
-    { name: 'Andrea Ramos', role: 'Co-Fundadora', country: 'México', flag: '🇲🇽', initials: 'AR', photo: 'equipo/Andrea.png' },
+    { name: 'Andrea Sánchez', role: 'Co-Fundadora', country: 'México', flag: '🇲🇽', initials: 'AR', photo: 'equipo/Andrea.png' },
   ];
 
   comiteExperto: TeamMember[] = [
@@ -99,21 +99,22 @@ export class Home {
       miembros: [
         { name: 'Leonel Intriago', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'LI', photo: 'equipo/Intriago Leonel.png' },
         { name: 'Camila Naranjo', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'CN', photo: 'equipo/Camila Naranjo.jpg' },
+        { name: 'Mariela Escobar', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'ME', photo: 'equipo/Mariela Escobar.png' },
         { name: 'Nohely Cáceres', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'NC', photo: 'equipo/Nohely Cáceres.jpg' },
-        { name: 'Juan Anaya', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'JA', photo: 'equipo/Juan Anaya.jpg' },
       ],
     },
     {
       nombre: 'Gestión de Proyectos',
       miembros: [
         { name: 'María Belén Terán', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'MB', photo: 'equipo/María Belén Terán.png' },
-        { name: 'Marko Aurelio Zapata', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'MZ' },
+        { name: 'Marko Aurelio Zapata', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'MZ', photo: 'equipo/Marko Zapata.jpg' },
         { name: 'Luis Camilo Díaz-Duarte', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'LD', photo: 'equipo/Luis Camilo Díaz-Duarte.png' },
         { name: 'Marcos Nahuel Rios', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'MR' },
         { name: 'Anaís Caviedes', role: 'Miembro', country: 'Chile', flag: '🇨🇱', initials: 'AC', photo: 'equipo/Anaís Caviedes.jpeg' },
         { name: 'Paula Camila González', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'PG' },
         { name: 'Kimberly Aragón', role: 'Miembro', country: 'Guatemala', flag: '🇬🇹', initials: 'KA', photo: 'equipo/Kimberly Aragón.png' },
-        { name: 'Andrea Ferrufino', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'AF' },
+        { name: 'Juan Anaya', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'JA', photo: 'equipo/Juan Anaya.jpg' },
+        { name: 'Andrea Ferrufino', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'AF', photo: 'equipo/Andrea Ferrufino.jpg' },
       ],
     },
     {
@@ -121,7 +122,7 @@ export class Home {
       miembros: [
         { name: 'José Manuel Hernández Limón', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'JL', photo: 'equipo/José Manuel Hernández Limón.png' },
         { name: 'Valentina Ramírez', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'VR', photo: 'equipo/Valentina Ramírez.png' },
-        { name: 'Benjamín Mendoza', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'BM' },
+        { name: 'Benjamín Mendoza', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'BM', photo: 'equipo/Benjamín Mendoza.jpg' },
         { name: 'María Guadalupe Juárez Hernández', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'GJ', photo: 'equipo/María Guadalupe Juárez Hernández.jpg' },
         { name: 'Javier David Uzcátegui', role: 'Miembro', country: 'Venezuela', flag: '🇻🇪', initials: 'JU', photo: 'equipo/Javier David-Uzcategui.jpg' },
         { name: 'Carlos Andrés Moya', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'CM', photo: 'equipo/Carlos Moya.png' },
@@ -134,14 +135,14 @@ export class Home {
       miembros: [
         { name: 'Fabrizio Flores', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'FF', photo: 'equipo/Fabrizio Flores.png' },
         { name: 'Estefanía Mansilla', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'EM' },
-        { name: 'María Cecilia Merino', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'MM' },
+        { name: 'María Cecilia Merino', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'MM', photo: 'equipo/María Cecilia Merino.jpeg' },
         { name: 'Mishell Criollo', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'MC', photo: 'equipo/Mishell Criollo.png' },
         { name: 'Uriel Miralles', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'UM', photo: 'equipo/Uriel Miralles.JPG' },
         { name: 'Pilar Montealegre Vargas', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'PM', photo: 'equipo/Pilar Montealegre Vargas.jpg' },
         { name: 'Rodrigo Aguirre', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'RA', photo: 'equipo/Rodrigo Aguirre.jpg' },
         { name: 'Wladimir Tandapilco', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'WT', photo: 'equipo/Wladimir Tandapilco.jpg' },
         { name: 'Andrea Guallasamin', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'AG', photo: 'equipo/Andrea Guallasamin.jpg' },
-        { name: 'Xavier García', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'XG' },
+        { name: 'Xavier García', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'XG', photo: 'equipo/Xavier García.jpg' },
       ],
     },
     {
@@ -165,20 +166,20 @@ export class Home {
         { name: 'Nelson Mesías', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'NM', photo: 'equipo/Nelson Mesías.jpg' },
         { name: 'Mariana Cerdas Pérez', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'MC', photo: 'equipo/Mariana Cerdas Pérez.png' },
         { name: 'Caren Nicole Moreno', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'CN', photo: 'equipo/Caren Moreno.jpg' },
-        { name: 'Denis Buffa', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'DB' },
+        { name: 'Denis Buffa', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'DB', photo: 'equipo/Denis Buffa.jpeg' },
         { name: 'Christian Andrade', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'CA', photo: 'equipo/Christian Andrade.jpeg' },
-        { name: 'Pedro Raul Mendoza', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'PM' },
+        { name: 'Pedro Raul Mendoza', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'PM', photo: 'equipo/Pedro Raul Mendoza.jpeg' },
       ],
     },
     {
       nombre: 'Diseño',
       miembros: [
-        { name: 'Alessia Vásquez', role: 'Head de Diseño', country: 'Costa Rica', flag: '🇨🇷', initials: 'AV', photo: 'equipo/Alessia Vásquez.jpg', isHead: true },
+        { name: 'Alessia Vásquez', role: 'Head de Diseño', country: 'Costa Rica', flag: '🇨🇷', initials: 'AV', photo: 'equipo/Alessia Vasquez.jpg', isHead: true },
         { name: 'Luciana Castro', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'LC', photo: 'equipo/Luciana Castro Camavilca foto en blanco.png' },
         { name: 'Mariana Valdez', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'MV', photo: 'equipo/Mariana Valdez Yañez.JPG' },
-        { name: 'Debora Parodi', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'DP' },
+        { name: 'Debora Parodi', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'DP', photo: 'equipo/Debora Parodi.jpg' },
         { name: 'Catalina Serrano', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'CS', photo: 'equipo/Catalina Serrano Foto.png' },
-        { name: 'Ashley Alban', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'AA' },
+        { name: 'Ashley Alban', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'AA', photo: 'equipo/Ashley Alban.png' },
         { name: 'Charlize Badilla', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'CB', photo: 'equipo/Charlize Badilla Soto.png' },
         { name: 'Ana Patricia Minaya De La Peña', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'AP', photo: 'equipo/Ana Minaya De La Peña.jpg' },
       ],
@@ -186,6 +187,7 @@ export class Home {
     {
       nombre: 'Audiovisual',
       miembros: [
+        { name: 'Anahí Nájera', role: 'Head de Comunicación', country: 'México', flag: '🇲🇽', initials: 'AN', photo: 'equipo/Anahi Najera.jpg', isHead: true },
         { name: 'Belén Endara', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'BE', photo: 'equipo/Belén Endara.png' },
         { name: 'Matias Tosini', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'MT', photo: 'equipo/Matias Tosini.png' },
         { name: 'Aaron Maldonado', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'AM', photo: 'equipo/Aaron Maldonado.JPG' },
@@ -195,7 +197,7 @@ export class Home {
       nombre: 'Recursos e Información',
       miembros: [
         { name: 'Alejandra Cázares', role: 'Head de Recursos', country: 'México', flag: '🇲🇽', initials: 'AC', photo: 'equipo/Alejandra Cazares.png', isHead: true },
-        { name: 'Katherine Girón', role: 'Miembro', country: 'Guatemala', flag: '🇬🇹', initials: 'KG' },
+        { name: 'Katherine Girón', role: 'Miembro', country: 'Guatemala', flag: '🇬🇹', initials: 'KG', photo: 'equipo/Katherine Girón.jpg' },
         { name: 'Josué Álvarez', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'JA', photo: 'equipo/Josue Alvarez.jpeg' },
         { name: 'Angie Pozo Cedeño', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'AP', photo: 'equipo/Angie Pozo Cedeño.jpg' },
         { name: 'Camil Espinoza', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'CE', photo: 'equipo/CAMIL ESPINOZA-RAMOS.jpeg' },

@@ -13,8 +13,8 @@ export interface CountryData {
   label: string;
   flag: string;
   members: CountryMember[];
-  color: string;       // base fill
-  colorHover: string;  // fill on hover
+  color: string;
+  colorHover: string;
 }
 
 const MUTED      = '#1a4a40';
@@ -26,7 +26,7 @@ const MUTED_HOV  = '#236b5a';
   templateUrl: './latam-map.html',
 })
 export class LatamMap {
-  hoveredCountry = signal<string | null>(null);
+  selectedCountry = signal<string | null>(null);
   tooltipX = signal(0);
   tooltipY = signal(0);
 
@@ -35,7 +35,7 @@ export class LatamMap {
       id: 'MX', label: 'México', flag: '🇲🇽',
       color: '#F59E0B', colorHover: '#FCD34D',
       members: [
-        { name: 'Andrea Ramos', role: 'Co-Fundadora', initials: 'AR', photo: 'equipo/Andrea.png' },
+        { name: 'Andrea Sánchez', role: 'Co-Fundadora', initials: 'AR', photo: 'equipo/Andrea.png' },
         { name: 'Anahí Nájera', role: 'Head Comunicación', initials: 'AN', photo: 'equipo/Anahi Najera.jpg' },
         { name: 'Alejandra Cázares', role: 'Head Recursos', initials: 'AC', photo: 'equipo/Alejandra Cazares.png' },
         { name: 'José Manuel Hernández Limón', role: 'Política y Regulación', initials: 'JL', photo: 'equipo/José Manuel Hernández Limón.png' },
@@ -73,7 +73,7 @@ export class LatamMap {
       color: '#EC4899', colorHover: '#F472B6',
       members: [
         { name: 'Alonso Segura', role: 'Co-Fundador', initials: 'AS', photo: 'equipo/Alonso Segura.jpg' },
-        { name: 'Alessia Vásquez', role: 'Head de Diseño', initials: 'AV', photo: 'equipo/Alessia Vásquez.jpg' },
+        { name: 'Alessia Vásquez', role: 'Head de Diseño', initials: 'AV', photo: 'equipo/Alessia Vasquez.jpg' },
         { name: 'Carlos Andrés Moya', role: 'Miembro', initials: 'CM', photo: 'equipo/Carlos Moya.png' },
         { name: 'Gloriana Corrales Masís', role: 'Gestión de Actividades', initials: 'GC', photo: 'equipo/Gloriana Corrales Masís.jpg' },
         { name: 'Mariana Cerdas Pérez', role: 'Miembro', initials: 'MC', photo: 'equipo/Mariana Cerdas Pérez.png' },
@@ -216,34 +216,58 @@ export class LatamMap {
   getFill(id: string): string {
     const c = this.getCountry(id);
     if (!c) return '#1a4a40';
-    return this.hoveredCountry() === id ? c.colorHover : c.color;
+    return this.selectedCountry() === id ? c.colorHover : c.color;
   }
 
-  onCountryHover(event: MouseEvent, countryId: string) {
-    this.hoveredCountry.set(countryId);
-    this.updateTooltipPos(event);
-  }
+  onCountryClick(event: MouseEvent, countryId: string) {
+    const country = this.getCountry(countryId);
 
-  onCountryLeave() {
-    this.hoveredCountry.set(null);
-  }
-
-  onMouseMove(event: MouseEvent, countryId: string) {
-    if (this.hoveredCountry() === countryId) {
-      this.updateTooltipPos(event);
+    // Toggle off if clicking the same country or one with no members
+    if (this.selectedCountry() === countryId || !country || country.members.length === 0) {
+      this.selectedCountry.set(null);
+      return;
     }
+
+    this.selectedCountry.set(countryId);
+    this.positionPanel(event);
   }
 
-  private updateTooltipPos(event: MouseEvent) {
-    const rect = (event.currentTarget as SVGElement).closest('.map-wrapper')?.getBoundingClientRect();
-    if (rect) {
-      this.tooltipX.set(event.clientX - rect.left + 12);
-      this.tooltipY.set(event.clientY - rect.top - 10);
+  closePanel() {
+    this.selectedCountry.set(null);
+  }
+
+  private positionPanel(event: MouseEvent) {
+    const wrapper = (event.currentTarget as SVGElement).closest('.map-wrapper');
+    const rect = wrapper?.getBoundingClientRect();
+    if (!rect) return;
+
+    const clickX = event.clientX - rect.left;
+    const clickY = event.clientY - rect.top;
+
+    const PANEL_W = 272;
+    const PANEL_H = 320;
+    const GAP = 14;
+
+    // Prefer right side; fall back to left
+    let left = clickX + GAP;
+    if (left + PANEL_W > rect.width) {
+      left = clickX - PANEL_W - GAP;
     }
+    left = Math.max(4, Math.min(left, rect.width - PANEL_W - 4));
+
+    // Prefer below click; shift up if it would overflow
+    let top = clickY - 20;
+    if (top + PANEL_H > rect.height) {
+      top = rect.height - PANEL_H - 4;
+    }
+    top = Math.max(4, top);
+
+    this.tooltipX.set(left);
+    this.tooltipY.set(top);
   }
 
   get activeCountry(): CountryData | undefined {
-    const id = this.hoveredCountry();
+    const id = this.selectedCountry();
     return id ? this.getCountry(id) : undefined;
   }
 }

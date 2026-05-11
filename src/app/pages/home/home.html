@@ -75,7 +75,7 @@
         <div style="overflow:visible;">
           <app-latam-map />
         </div>
-        <p class="text-center text-xs mt-4" style="color:#5DCAA5;">Pasa el cursor sobre un país para ver el equipo</p>
+        <p class="text-center text-xs mt-4" style="color:#5DCAA5;">Haz click sobre un país para ver el equipo</p>
       </div>
     </div>
 
@@ -235,7 +235,7 @@
     </div>
 
     <p class="text-sm mb-16" style="color:#1D9E75;">
-      ↓ Pasa el cursor sobre cada país para conocer a nuestros miembros
+      ↓ Haz click sobre un país para conocer a nuestros miembros
     </p>
 
     <!-- Mapa centrado -->
@@ -284,9 +284,11 @@
               <div class="absolute inset-[-20px] blur-2xl opacity-30 pointer-events-none rounded-full"
                    style="background:radial-gradient(circle,#1D9E75,transparent 70%);"></div>
               <div class="w-full h-full rounded-full overflow-hidden border-4 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
-                   style="background-color:#085041; border-color:#5DCAA5; box-shadow: 0 0 0 4px rgba(93,202,165,0.2);">
+                   style="background-color:#ffffff; border-color:#5DCAA5; box-shadow: 0 0 0 4px rgba(93,202,165,0.2);">
                 @if (member.photo) {
-                  <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover object-top" />
+                  <img [src]="member.photo" [alt]="member.name"
+                    class="w-full h-full object-cover object-top"
+                    [class.scale-125]="member.name === 'Alonso Segura'" />
                 } @else {
                   <svg viewBox="0 0 56 56" width="80" height="80" fill="none">
                     <circle cx="28" cy="21" r="11" fill="#5DCAA5" opacity="0.6"/>
@@ -463,104 +465,50 @@
 </section>
 
 
+
 <!-- ============================================================
-  EVENTOS
+  EVENTOS + NEWSLETTER — Preview cards (CTAs hacia sus páginas)
 ============================================================ -->
-<section id="eventos" class="py-24 bg-white">
+<section class="py-24 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <div class="text-center mb-16">
-      <p class="text-xs font-700 uppercase tracking-widest mb-3" style="color:#1D9E75;">¿Qué hacemos?</p>
-      <h2 class="text-4xl lg:text-5xl font-800 leading-tight text-gray-900">Nuestros Eventos</h2>
-    </div>
+    <div class="grid sm:grid-cols-2 gap-8">
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-      <!-- SynBio Journal Club -->
-      <div class="group rounded-2xl p-7 border hover:shadow-lg transition-all duration-300 hover:scale-[1.02]" style="background-color:#E1F5EE; border-color:rgba(29,158,117,0.2);">
-        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-5" style="background-color:#1D9E75;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 14H8v-2h8v2zm0-4H8v-2h8v2zm0-4H8V6h8v2z"/></svg>
+      <!-- Eventos card -->
+      <div class="rounded-2xl p-10 flex flex-col justify-between border" style="background-color:#E1F5EE; border-color:rgba(29,158,117,0.2);">
+        <div>
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background-color:#1D9E75;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+          </div>
+          <h2 class="text-2xl font-800 mb-3" style="color:#085041;">Nuestros Eventos</h2>
+          <p class="text-gray-600 text-sm leading-relaxed mb-6">
+            Journal Clubs, SynBio Talks, Conversatorios y más. Espacios de formación y conexión para la comunidad latinoamericana de biología sintética.
+          </p>
         </div>
-        <h3 class="text-base font-700 mb-3" style="color:#085041;">SynBio Journal Club</h3>
-        <p class="text-sm text-gray-600 leading-relaxed">
-          Espacio para compartir y discutir los avances más recientes en biología sintética. Reunimos a la comunidad latinoamericana para explorar publicaciones científicas de vanguardia.
-        </p>
+        <a routerLink="/eventos" class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-600 text-white text-sm transition-all duration-200 hover:scale-105 self-start" style="background-color:#085041;">
+          Ver todos los eventos
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        </a>
       </div>
 
-      <!-- SynBio Talks -->
-      <div class="group rounded-2xl p-7 border hover:shadow-lg transition-all duration-300 hover:scale-[1.02]" style="background-color:#E1F5EE; border-color:rgba(29,158,117,0.2);">
-        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-5" style="background-color:#1D9E75;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+      <!-- Newsletter card -->
+      <div class="rounded-2xl p-10 flex flex-col justify-between" style="background-color:#04342C;">
+        <div>
+          <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-6" style="background-color:#1D9E75;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <h2 class="text-2xl font-800 text-white mb-3">Newsletter</h2>
+          <p class="text-sm leading-relaxed mb-6" style="color:#a8d5c4;">
+            Entérate de lo que está pasando en biología sintética en la región. Suscríbete a nuestro blog en Substack.
+          </p>
         </div>
-        <h3 class="text-base font-700 mb-3" style="color:#085041;">SynBio Talks</h3>
-        <p class="text-sm text-gray-600 leading-relaxed">
-          Ciclo de conferencias de dos partes y dos talleres donde se comparten las experiencias de destacados científicos y emprendedores de synbio que lograron abrirse camino en empresas de élite como MIT, Universidad de Copenhague y University of Wisconsin–Madison.
-        </p>
-      </div>
-
-      <!-- Communities around the world -->
-      <div class="group rounded-2xl p-7 border hover:shadow-lg transition-all duration-300 hover:scale-[1.02]" style="background-color:#E1F5EE; border-color:rgba(29,158,117,0.2);">
-        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-5" style="background-color:#1D9E75;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-        </div>
-        <h3 class="text-base font-700 mb-3" style="color:#085041;">Communities around the world</h3>
-        <p class="text-sm text-gray-600 leading-relaxed">
-          En el IGBM Grand Jamboree en París, el "SynBio Communities around the World" reúne a organizaciones de biología sintética de todo el mundo para intercambiar conocimientos, explorar mejores prácticas y fortalecer la integración internacional en un ecosistema global más inclusivo.
-        </p>
-      </div>
-
-      <!-- Conversatorios -->
-      <div class="group rounded-2xl p-7 border hover:shadow-lg transition-all duration-300 hover:scale-[1.02]" style="background-color:#E1F5EE; border-color:rgba(29,158,117,0.2);">
-        <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-5" style="background-color:#1D9E75;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
-        </div>
-        <h3 class="text-base font-700 mb-3" style="color:#085041;">Conversatorios</h3>
-        <p class="text-sm text-gray-600 leading-relaxed">
-          Sesión virtual organizada por SynBio for LATAM: Embajadores IGBM en América Latina y SynBio LATAM para generar conciencia pero también entusiasmo sobre el movimiento de biología sintética en la región.
-        </p>
+        <a routerLink="/newsletter" class="inline-flex items-center gap-2 px-6 py-3 rounded-full font-600 text-white text-sm transition-all duration-200 hover:scale-105 self-start" style="background-color:#1D9E75;">
+          Suscribirme
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        </a>
       </div>
 
     </div>
-
-    <div class="text-center mt-10">
-      <a routerLink="/eventos/calendario" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-600 transition-all duration-200 hover:scale-105 border text-sm"
-         style="color:#1D9E75; border-color:rgba(29,158,117,0.4);">
-        Ver todos los eventos
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ============================================================
-  NEWSLETTER
-============================================================ -->
-<section id="newsletter" class="py-24" style="background-color:#04342C;">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-
-    <div class="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-6" style="background-color:#1D9E75;">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-    </div>
-
-    <p class="text-xs font-700 uppercase tracking-widest mb-4" style="color:#5DCAA5;">Mantente informado</p>
-    <h2 class="text-4xl lg:text-5xl font-800 text-white mb-5">Newsletter</h2>
-    <p class="text-lg mb-10 max-w-xl mx-auto" style="color:#a8d5c4;">
-      Entérate de lo que está pasando en biología sintética en la región. Suscríbete a nuestro blog en Substack y no te pierdas ninguna novedad.
-    </p>
-
-    <a
-      href="https://synbiolatam.substack.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="inline-flex items-center gap-2 px-8 py-4 rounded-full font-700 text-white transition-all duration-200 hover:scale-105 hover:shadow-xl text-base"
-      style="background-color:#1D9E75;"
-    >
-      Suscribirme al Newsletter
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
-    </a>
-
   </div>
 </section>
 
