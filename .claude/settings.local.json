@@ -44,7 +44,12 @@
       "Bash(cp \"team photos updated/armaan melwani.jpg\" \"public/equipo/armaan melwani.jpg\")",
       "Bash(cp \"team photos updated/Camila Naranjo.jpg\" \"public/equipo/Camila Naranjo.jpg\")",
       "Bash(cp \"team photos updated/Caren Moreno.jpg\" \"public/equipo/Caren Moreno.jpg\")",
-      "Bash(grep -iE \"\\\\.\\(jpeg|jpg|JPG\\)$\")"
+      "Bash(grep -iE \"\\\\.\\(jpeg|jpg|JPG\\)$\")",
+      "Bash(git stash *)",
+      "Bash(git checkout *)",
+      "Bash(git push *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }
