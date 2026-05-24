@@ -1,0 +1,76 @@
+<!-- Hero -->
+<section class="pt-32 pb-14" style="background-color:#04342C;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div class="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full opacity-10"
+           style="background:radial-gradient(circle,#1D9E75,transparent 70%);"></div>
+    </div>
+    <p class="text-xs font-700 uppercase tracking-widest mb-4" style="color:#5DCAA5;">Recursos</p>
+    <h1 class="text-4xl lg:text-6xl font-800 text-white mb-6 leading-tight">Base de Datos</h1>
+    <p class="text-lg max-w-2xl" style="color:#a8d5c4;">
+      Directorio de personas, proyectos e instituciones del ecosistema de biología sintética en Latinoamérica.
+    </p>
+  </div>
+</section>
+
+<!-- Iframe section -->
+<section class="py-12 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="mb-8 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+      <div>
+        <p class="text-xs font-700 uppercase tracking-widest mb-1" style="color:#1D9E75;">Directorio</p>
+        <h2 class="text-2xl lg:text-3xl font-800 text-gray-900">Ecosistema SynBio LATAM</h2>
+        <p class="text-sm text-gray-500 mt-1">Desplázate horizontalmente en pantallas pequeñas para ver todas las columnas.</p>
+      </div>
+      <a
+        href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTYq5wNG1Zita2PH1-NDt0YpH8P0eUdcKLTODkUS2Gb66FgI9PYHFmRt46ikv-tbg/pubhtml"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex shrink-0 items-center gap-2 px-5 py-2.5 rounded-full text-sm font-600 text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
+        style="background-color:#085041;"
+      >
+        Abrir en Google Sheets
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19 19H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Responsive iframe wrapper -->
+    <div class="rounded-2xl overflow-hidden border shadow-sm" style="border-color:rgba(29,158,117,0.2);">
+      <div class="overflow-x-auto w-full">
+        <iframe
+          [src]="sheetUrl"
+          class="block"
+          style="width:100%; min-width:640px; height:75vh; min-height:500px; border:none;"
+          title="Base de Datos SynBio LATAM"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <p class="text-xs text-gray-400 text-center mt-4">
+      Los datos son actualizados periódicamente por el equipo de SynBio LATAM.
+    </p>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-16" style="background-color:#E1F5EE;">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-xs font-700 uppercase tracking-widest mb-4" style="color:#1D9E75;">¿Quieres aparecer?</p>
+    <h2 class="text-2xl lg:text-3xl font-800 mb-4" style="color:#085041;">Suma tu perfil a la base de datos</h2>
+    <p class="text-base text-gray-600 mb-8 max-w-xl mx-auto">
+      Si formas parte del ecosistema de biología sintética en Latinoamérica, únete a la red y conecta con otros actores de la región.
+    </p>
+    <a
+      routerLink="/unete"
+      class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-600 text-white transition-all duration-200 hover:scale-105 hover:shadow-lg"
+      style="background-color:#085041;"
+    >
+      Únete a SynBio LATAM
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+    </a>
+  </div>
+</section>

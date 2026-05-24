@@ -183,7 +183,7 @@ export class Home {
       nombre: 'Diseño',
       miembros: [
         { name: 'Anahí Nájera', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'AN', photo: 'equipo/Anahi Najera.jpg' },
-        { name: 'Belén Endara', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'BE', photo: 'equipo/Belén Endara.png' },
+        { name: 'Belén Endara', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'BE', photo: 'equipo/Belén Endara.webp' },
       ],
     },
     {
@@ -192,7 +192,7 @@ export class Home {
         { name: 'Matias Tosini', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'MT', photo: 'equipo/Matias Tosini.png' },
         { name: 'Aaron Maldonado', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'AM', photo: 'equipo/Aaron Maldonado.JPG' },
         { name: 'Katherine Girón', role: 'Miembro', country: 'Guatemala', flag: '🇬🇹', initials: 'KG', photo: 'equipo/Katherine Girón.jpg' },
-        { name: 'Andrea Ramos', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'AR' },
+        { name: 'Andrea Ramos', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'AR', photo: 'equipo/Andrea Ramos.webp' },
       ],
     },
     {

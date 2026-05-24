@@ -18,6 +18,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/eventos/eventos').then(m => m.Eventos),
   },
   {
+    path: 'recursos/base-de-datos',
+    loadComponent: () => import('./pages/recursos/base-de-datos/base-de-datos').then(m => m.BaseDeDatos),
+  },
+  {
     path: 'newsletter',
     loadComponent: () => import('./pages/newsletter/newsletter').then(m => m.Newsletter),
   },

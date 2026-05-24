@@ -42,7 +42,7 @@ export class LatamMap {
         { name: 'Mariana Valdez', role: 'Gestión de Actividades', initials: 'MV', photo: 'equipo/Mariana Valdez Yañez.JPG' },
         { name: 'Anahí Nájera', role: 'Diseño', initials: 'AN', photo: 'equipo/Anahi Najera.jpg' },
         { name: 'Alejandra Cázares', role: 'Recursos e Información', initials: 'AC', photo: 'equipo/Alejandra Cazares.png' },
-        { name: 'Andrea Ramos', role: 'Audiovisual', initials: 'AR' },
+        { name: 'Andrea Ramos', role: 'Audiovisual', initials: 'AR', photo: 'equipo/Andrea Ramos.webp' },
       ]
     },
     {
@@ -125,7 +125,7 @@ export class LatamMap {
         { name: 'Christian Andrade', role: 'Capacitación', initials: 'CA', photo: 'equipo/Christian Andrade.jpeg' },
         { name: 'Catalina Serrano', role: 'Gestión de Actividades', initials: 'CS', photo: 'equipo/Catalina Serrano Foto.png' },
         { name: 'Ashley Alban', role: 'Gestión de Actividades', initials: 'AA' },
-        { name: 'Belén Endara', role: 'Diseño', initials: 'BE', photo: 'equipo/Belén Endara.png' },
+        { name: 'Belén Endara', role: 'Diseño', initials: 'BE', photo: 'equipo/Belén Endara.webp' },
         { name: 'Aaron Maldonado', role: 'Audiovisual', initials: 'AM', photo: 'equipo/Aaron Maldonado.JPG' },
         { name: 'Josué Álvarez', role: 'Recursos e Información', initials: 'JA', photo: 'equipo/Josue Alvarez.jpeg' },
         { name: 'Angie Pozo Cedeño', role: 'Recursos e Información', initials: 'AP', photo: 'equipo/Angie Pozo Cedeño.jpg' },
