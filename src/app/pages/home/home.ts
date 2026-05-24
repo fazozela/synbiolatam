@@ -197,6 +197,7 @@ export class Home {
       nombre: 'Recursos e Información',
       miembros: [
         { name: 'Alejandra Cázares', role: 'Head de Recursos', country: 'México', flag: '🇲🇽', initials: 'AC', photo: 'equipo/Alejandra Cazares.png', isHead: true },
+        { name: 'Andrea Ramos', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'AR' },
         { name: 'Katherine Girón', role: 'Miembro', country: 'Guatemala', flag: '🇬🇹', initials: 'KG', photo: 'equipo/Katherine Girón.jpg' },
         { name: 'Josué Álvarez', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'JA', photo: 'equipo/Josue Alvarez.jpeg' },
         { name: 'Angie Pozo Cedeño', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'AP', photo: 'equipo/Angie Pozo Cedeño.jpg' },

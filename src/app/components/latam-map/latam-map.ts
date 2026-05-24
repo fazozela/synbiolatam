@@ -38,6 +38,7 @@ export class LatamMap {
         { name: 'Andrea Sánchez', role: 'Co-Fundadora', initials: 'AR', photo: 'equipo/Andrea.png' },
         { name: 'Anahí Nájera', role: 'Audiovisual', initials: 'AN', photo: 'equipo/Anahi Najera.jpg' },
         { name: 'Alejandra Cázares', role: 'Recursos e Información', initials: 'AC', photo: 'equipo/Alejandra Cazares.png' },
+        { name: 'Andrea Ramos', role: 'Recursos e Información', initials: 'AR' },
         { name: 'José Manuel Hernández Limón', role: 'Política y Regulación', initials: 'JL', photo: 'equipo/José Manuel Hernández Limón.png' },
         { name: 'Benjamín Mendoza', role: 'Política y Regulación', initials: 'BM', photo: 'equipo/Benjamín Mendoza.jpg' },
         { name: 'María Guadalupe Juárez Hernández', role: 'Política y Regulación', initials: 'GJ', photo: 'equipo/María Guadalupe Juárez Hernández.jpg' },
