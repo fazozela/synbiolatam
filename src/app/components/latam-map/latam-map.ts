@@ -114,14 +114,14 @@ export class LatamMap {
         { name: 'Camila Naranjo', role: 'Financiamiento y Sostenibilidad', initials: 'CN', photo: 'equipo/Camila Naranjo.jpg' },
         { name: 'María Belén Terán', role: 'Financiamiento y Sostenibilidad', initials: 'MB', photo: 'equipo/María Belén Terán.png' },
         { name: 'Paula Camila González', role: 'Financiamiento y Sostenibilidad', initials: 'PG' },
-        { name: 'Valentina Ramírez', role: 'Gestión de Proyectos', initials: 'VR', photo: 'equipo/Valentina Ramírez.png' },
+        { name: 'Valentina Ramírez', role: 'Política y Regulación (Head)', initials: 'VR', photo: 'equipo/Valentina Ramírez.png' },
         { name: 'Mishell Criollo', role: 'Política y Regulación', initials: 'MC', photo: 'equipo/Mishell Criollo.png' },
         { name: 'Wladimir Tandapilco', role: 'Expansión', initials: 'WT', photo: 'equipo/Wladimir Tandapilco.jpg' },
         { name: 'Andrea Guallasamin', role: 'Expansión', initials: 'AG', photo: 'equipo/Andrea Guallasamin.jpg' },
         { name: 'Xavier García', role: 'Expansión', initials: 'XG', photo: 'equipo/Xavier García.jpg' },
         { name: 'Katherine Silva', role: 'Expansión', initials: 'KS' },
-        { name: 'Krister Figueroa', role: 'Capacitación', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
-        { name: 'Nelson Mesías', role: 'Capacitación', initials: 'NM', photo: 'equipo/Nelson Mesías.jpg' },
+        { name: 'Krister Figueroa', role: 'Gestión de Actividades (Head)', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
+        { name: 'Nelson Mesías', role: 'Gestión de Actividades (Head)', initials: 'NM', photo: 'equipo/Nelson Mesías.jpg' },
         { name: 'Christian Andrade', role: 'Capacitación', initials: 'CA', photo: 'equipo/Christian Andrade.jpeg' },
         { name: 'Catalina Serrano', role: 'Gestión de Actividades', initials: 'CS', photo: 'equipo/Catalina Serrano Foto.png' },
         { name: 'Ashley Alban', role: 'Gestión de Actividades', initials: 'AA' },
@@ -175,7 +175,7 @@ export class LatamMap {
       color: '#A855F7', colorHover: '#C084FC',
       members: [
         { name: 'Anaís Caviedes', role: 'Financiamiento y Sostenibilidad', initials: 'AC', photo: 'equipo/Anaís Caviedes.jpeg' },
-        { name: 'Bastián Márquez', role: 'Expansión', initials: 'BM', photo: 'equipo/Bastián Márquez González.jpeg' },
+        { name: 'Bastián Márquez', role: 'Capacitación (Head)', initials: 'BM', photo: 'equipo/Bastián Márquez González.jpeg' },
       ]
     },
     {

@@ -116,7 +116,6 @@ export class Home {
         { name: 'Kimberly Aragón', role: 'Miembro', country: 'Guatemala', flag: '🇬🇹', initials: 'KA', photo: 'equipo/Kimberly Aragón.png' },
         { name: 'Andrea Ferrufino', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'AF', photo: 'equipo/Andrea Ferrufino.jpg' },
         { name: 'José Manuel Hernández Limón', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'JL', photo: 'equipo/José Manuel Hernández Limón.png' },
-        { name: 'Valentina Ramírez', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'VR', photo: 'equipo/Valentina Ramírez.png' },
         { name: 'Benjamín Mendoza', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'BM', photo: 'equipo/Benjamín Mendoza.jpg' },
         { name: 'María Guadalupe Juárez Hernández', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'GJ', photo: 'equipo/María Guadalupe Juárez Hernández.jpg' },
         { name: 'Javier David Uzcátegui', role: 'Miembro', country: 'Venezuela', flag: '🇻🇪', initials: 'JU', photo: 'equipo/Javier David-Uzcategui.jpg' },
@@ -127,6 +126,7 @@ export class Home {
     {
       nombre: 'Política y Regulación',
       miembros: [
+        { name: 'Valentina Ramírez', role: 'Head', country: 'Ecuador', flag: '🇪🇨', initials: 'VR', photo: 'equipo/Valentina Ramírez.png', isHead: true },
         { name: 'Alejandro Vallejo', role: 'Miembro', country: 'Rep. Dominicana', flag: '🇩🇴', initials: 'AV' },
         { name: 'Fabrizio Flores', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'FF', photo: 'equipo/Fabrizio Flores.png' },
         { name: 'Estefanía Mansilla', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'EM' },
@@ -148,17 +148,15 @@ export class Home {
         { name: 'Sebastián Toro', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'ST', photo: 'equipo/Sebastián Toro.jpg' },
         { name: 'Juan David León', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'JL' },
         { name: 'Rocío Coronel', role: 'Miembro', country: 'Paraguay', flag: '🇵🇾', initials: 'RC', photo: 'equipo/Rocio Coronel.jpg' },
-        { name: 'Bastián Márquez', role: 'Miembro', country: 'Chile', flag: '🇨🇱', initials: 'BM', photo: 'equipo/Bastián Márquez González.jpeg' },
       ],
     },
     {
       nombre: 'Capacitación',
       miembros: [
+        { name: 'Bastián Márquez', role: 'Head', country: 'Chile', flag: '🇨🇱', initials: 'BM', photo: 'equipo/Bastián Márquez González.jpeg', isHead: true },
         { name: 'Adriana Marcela Martínez Botello', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'AM', photo: 'equipo/Adriana Marcela Martinez Botello.jpeg' },
         { name: 'Gloriana Corrales Masís', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'GC', photo: 'equipo/Gloriana Corrales Masís.jpg' },
         { name: 'Asley Caballero', role: 'Miembro', country: 'Panamá', flag: '🇵🇦', initials: 'AC', photo: 'equipo/Asley Caballero.jpeg' },
-        { name: 'Krister Figueroa', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
-        { name: 'Nelson Mesías', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'NM', photo: 'equipo/Nelson Mesías.jpg' },
         { name: 'Mariana Cerdas Pérez', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'MC', photo: 'equipo/Mariana Cerdas Pérez.png' },
         { name: 'Caren Nicole Moreno', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'CN', photo: 'equipo/Caren Moreno.jpg' },
         { name: 'Denis Buffa', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'DB', photo: 'equipo/Denis Buffa.jpeg' },
@@ -168,6 +166,8 @@ export class Home {
     {
       nombre: 'Gestión de Actividades',
       miembros: [
+        { name: 'Nelson Mesías', role: 'Head', country: 'Ecuador', flag: '🇪🇨', initials: 'NM', photo: 'equipo/Nelson Mesías.jpg', isHead: true },
+        { name: 'Krister Figueroa', role: 'Head', country: 'Ecuador', flag: '🇪🇨', initials: 'KF', photo: 'equipo/Krister Figueroa.png', isHead: true },
         { name: 'Pedro Raul Mendoza', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'PM', photo: 'equipo/Pedro Raul Mendoza.jpeg' },
         { name: 'Luciana Castro', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'LC', photo: 'equipo/Luciana Castro Camavilca foto en blanco.png' },
         { name: 'Mariana Valdez', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'MV', photo: 'equipo/Mariana Valdez Yañez.JPG' },
