@@ -10,8 +10,6 @@ export class Navbar {
   isScrolled = signal(false);
   mobileOpen = signal(false);
   inicioOpen = signal(false);
-  eventosOpen = signal(false);
-  recursosOpen = signal(false);
 
   @HostListener('window:scroll')
   onScroll() {
@@ -22,16 +20,12 @@ export class Navbar {
     this.mobileOpen.update(v => !v);
   }
 
-  toggleDropdown(menu: 'inicio' | 'eventos' | 'recursos') {
+  toggleDropdown(menu: 'inicio') {
     this.inicioOpen.set(menu === 'inicio' ? !this.inicioOpen() : false);
-    this.eventosOpen.set(menu === 'eventos' ? !this.eventosOpen() : false);
-    this.recursosOpen.set(menu === 'recursos' ? !this.recursosOpen() : false);
   }
 
   closeAll() {
     this.inicioOpen.set(false);
-    this.eventosOpen.set(false);
-    this.recursosOpen.set(false);
     this.mobileOpen.set(false);
   }
 }

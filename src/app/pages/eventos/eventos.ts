@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 interface Evento {
@@ -9,12 +9,35 @@ interface Evento {
   icon: string;
 }
 
+interface FlyerModal {
+  title: string;
+  src: string;
+}
+
 @Component({
   selector: 'app-eventos',
   imports: [RouterLink],
   templateUrl: './eventos.html',
 })
 export class Eventos {
+  flyerModal = signal<FlyerModal | null>(null);
+
+  openFlyer(ev: Evento) {
+    if (!ev.flyer) return;
+    this.flyerModal.set({ title: ev.title, src: ev.flyer });
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeFlyer() {
+    this.flyerModal.set(null);
+    document.body.style.overflow = '';
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscape() {
+    this.closeFlyer();
+  }
+
   propios: Evento[] = [
     {
       tag: 'Carreras internacionales',
