@@ -41,7 +41,7 @@ export class LatamMap {
         { name: 'José Manuel Hernández Limón', role: 'Política y Regulación', initials: 'JL', photo: 'equipo/José Manuel Hernández Limón.png' },
         { name: 'Benjamín Mendoza', role: 'Política y Regulación', initials: 'BM', photo: 'equipo/Benjamín Mendoza.jpg' },
         { name: 'María Guadalupe Juárez Hernández', role: 'Política y Regulación', initials: 'GJ', photo: 'equipo/María Guadalupe Juárez Hernández.jpg' },
-        { name: 'Mariana Valdez', role: 'Comunicación', initials: 'MV', photo: 'equipo/Mariana Valdez Yañez.JPG' },
+        { name: 'Mariana Valdez', role: 'Diseño', initials: 'MV', photo: 'equipo/Mariana Valdez Yañez.JPG' },
       ]
     },
     {
@@ -96,7 +96,6 @@ export class LatamMap {
         { name: 'Juan Anaya', role: 'Gestión de Proyectos', initials: 'JA', photo: 'equipo/Juan Anaya.jpg' },
         { name: 'Juan David León', role: 'Capacitación', initials: 'JL' },
         { name: 'Adriana Marcela Martínez Botello', role: 'Capacitación', initials: 'AM', photo: 'equipo/Adriana Marcela Martinez Botello.jpeg' },
-        { name: 'Valentina Ramírez', role: 'Política y Regulación', initials: 'VR', photo: 'equipo/Valentina Ramírez.png' },
       ]
     },
     {
@@ -114,6 +113,7 @@ export class LatamMap {
         { name: 'Camila Naranjo', role: 'Financiamiento y Sostenibilidad', initials: 'CN', photo: 'equipo/Camila Naranjo.jpg' },
         { name: 'María Belén Terán', role: 'Gestión de Proyectos', initials: 'MB', photo: 'equipo/María Belén Terán.png' },
         { name: 'Paula Camila González', role: 'Gestión de Proyectos', initials: 'PG' },
+        { name: 'Valentina Ramírez', role: 'Política y Regulación', initials: 'VR', photo: 'equipo/Valentina Ramírez.png' },
         { name: 'Mishell Criollo', role: 'Expansión', initials: 'MC', photo: 'equipo/Mishell Criollo.png' },
         { name: 'Wladimir Tandapilco', role: 'Expansión', initials: 'WT', photo: 'equipo/Wladimir Tandapilco.jpg' },
         { name: 'Andrea Guallasamin', role: 'Expansión', initials: 'AG', photo: 'equipo/Andrea Guallasamin.jpg' },
@@ -151,6 +151,7 @@ export class LatamMap {
         { name: 'Wilka Fidel Vargas Peña', role: 'Política y Regulación', initials: 'WV', photo: 'equipo/Willka Fidel Vargas Peña.png' },
         { name: 'Rodrigo Aguirre', role: 'Expansión', initials: 'RA', photo: 'equipo/Rodrigo Aguirre.jpg' },
         { name: 'Pilar Montealegre Vargas', role: 'Expansión', initials: 'PM', photo: 'equipo/Pilar Montealegre Vargas.jpg' },
+        { name: 'Estefanía Mansilla', role: 'Expansión', initials: 'EM' },
         { name: 'Andrea Ferrufino', role: 'Gestión de Proyectos', initials: 'AF' },
         { name: 'Ian Sebastián Terán', role: 'Recursos e Información', initials: 'IT', photo: 'equipo/Ian Sebastian Teran.jpg' },
         { name: 'Jeancarla Padilla', role: 'Recursos e Información', initials: 'JP', photo: 'equipo/Jeancarla Padilla.png' },
@@ -174,7 +175,6 @@ export class LatamMap {
       members: [
         { name: 'Anaís Caviedes', role: 'Gestión de Proyectos', initials: 'AC', photo: 'equipo/Anaís Caviedes.jpeg' },
         { name: 'Bastián Márquez', role: 'Capacitación', initials: 'BM', photo: 'equipo/Bastián Márquez González.jpeg' },
-        { name: 'María Cecilia Merino', role: 'Expansión', initials: 'MM' },
       ]
     },
     {
