@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-base-de-datos',
-  imports: [RouterLink],
   templateUrl: './base-de-datos.html',
 })
 export class BaseDeDatos {
