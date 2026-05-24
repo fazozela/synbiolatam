@@ -331,7 +331,7 @@
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-5">
         @for (member of comiteExperto; track member.name) {
           <div class="group rounded-2xl p-6 flex flex-col items-center gap-3 transition-all duration-300 hover:scale-105 border" style="background-color:#085041; border-color:rgba(93,202,165,0.15);">
-            <div class="w-16 h-16 rounded-full overflow-hidden border-2 flex items-center justify-center text-lg font-700" style="background-color:#E1F5EE; color:#085041; border-color:#1D9E75;">
+            <div class="w-16 h-16 rounded-full overflow-hidden border-2 flex items-center justify-center text-lg font-700" style="background-color:#ffffff; color:#085041; border-color:#1D9E75;">
               @if (member.photo) {
                 <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover" />
               } @else {
@@ -373,7 +373,7 @@
                 @if (member.isHead) {
                   <!-- Head — más grande y destacado -->
                   <div class="relative w-20 h-20 rounded-full overflow-hidden border-2 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
-                       style="background-color:#085041; border-color:#5DCAA5; box-shadow: 0 0 0 3px rgba(93,202,165,0.3);">
+                       style="background-color:#ffffff; border-color:#5DCAA5; box-shadow: 0 0 0 3px rgba(93,202,165,0.3);">
                     @if (member.photo) {
                       <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover object-top" />
                     } @else {
@@ -391,7 +391,7 @@
                 } @else {
                   <!-- Miembro regular -->
                   <div class="w-14 h-14 rounded-full overflow-hidden border-2 flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-                       style="background-color:#085041; border-color:#1D9E75;">
+                       style="background-color:#ffffff; border-color:#1D9E75;">
                     @if (member.photo) {
                       <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover object-top" />
                     } @else {
