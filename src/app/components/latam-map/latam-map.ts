@@ -203,7 +203,7 @@ export class LatamMap {
       id: 'DO', label: 'Rep. Dominicana', flag: '🇩🇴',
       color: '#6366F1', colorHover: '#818CF8',
       members: [
-        { name: 'Alejandro Vallejo', role: 'Gestión de Proyectos', initials: 'AV' },
+        { name: 'Alejandro Vallejo', role: 'Política y Regulación', initials: 'AV' },
       ]
     },
   ];
