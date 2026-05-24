@@ -211,7 +211,4 @@ export class Home {
     },
   ];
 
-  comunicacion: TeamMember[] = [
-    { name: 'Anahí Nájera', role: 'Head de Comunicación', country: 'México', flag: '🇲🇽', initials: 'AN', photo: 'equipo/Anahi Najera.jpg', isHead: true },
-  ];
 }
