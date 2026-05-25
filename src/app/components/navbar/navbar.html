@@ -53,6 +53,22 @@
           Equipo
         </a>
 
+        <!-- Recursos dropdown -->
+        <div class="relative">
+          <button
+            (click)="toggleDropdown('recursos')"
+            class="flex items-center gap-1 px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors cursor-pointer"
+          >
+            Recursos
+            <svg [class]="recursosOpen() ? 'rotate-180 transition-transform' : 'transition-transform'" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M6 8L1 3h10z"/></svg>
+          </button>
+          @if (recursosOpen()) {
+            <div class="absolute top-full left-0 mt-1 w-52 bg-white rounded-xl shadow-xl border border-gray-100 py-2 z-50">
+              <a routerLink="/recursos/base-de-datos" (click)="closeAll()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-700 transition-colors">Base de datos</a>
+            </div>
+          }
+        </div>
+
         <!-- Newsletter -->
         <a routerLink="/newsletter" (click)="closeAll()" class="px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors">
           Newsletter
