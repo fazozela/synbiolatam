@@ -1,4 +1,4 @@
-import { Component, signal, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 interface Evento {
@@ -6,11 +6,6 @@ interface Evento {
   title: string;
   desc: string;
   flyers: string[];
-}
-
-interface FlyerModal {
-  title: string;
-  src: string;
 }
 
 @Component({
@@ -23,43 +18,38 @@ export class Eventos {
     {
       tag: 'Carreras internacionales',
       title: 'SynBio Talks',
-      desc: 'Charlas con jóvenes latinoamericanos que abrieron camino en ciencia internacional — posgrados, maestrías, pasantías y research assistant en MIT, Harvard y Erasmus Mundus.',
-      flyers: ['eventos/synbio-talks/flyer1.webp'],
+      desc: 'Charlas con jóvenes latinoamericanos que abrieron camino en ciencia internacional — posgrados, maestrías, pasantías y research assistant en MIT, Harvard y Erasmus Mundus. Inspiración y orientación para dar el siguiente paso.',
+      flyers: ['eventos/talks.webp'],
     },
     {
       tag: 'Lectura crítica',
       title: 'SynBio Journal Club',
       desc: 'Espacio para compartir y discutir los avances más recientes en biología sintética. Reunimos a la comunidad latinoamericana para explorar publicaciones científicas de vanguardia.',
-      flyers: ['eventos/journal-club/flyer1.webp'],
+      flyers: ['eventos/journal-club.webp'],
     },
     {
       tag: 'Comunidad y debate',
       title: 'SynBio Match & Discuss',
       desc: 'Aprendizaje y debate en torno a artículos científicos de frontera para conectar a jóvenes de la comunidad synbio latinoamericana y fomentar el pensamiento crítico.',
-      flyers: ['eventos/match-discuss/flyer1.webp', 'eventos/match-discuss/flyer2.webp'],
+      flyers: ['eventos/match-discuss.webp'],
     },
     {
       tag: 'Comunidad regional',
       title: 'SynBio Communities',
       desc: 'Encuentros y actividades que fortalecen los lazos entre comunidades locales de biología sintética en toda Latinoamérica.',
-      flyers: [
-        'eventos/synbio-communities/flyer1.webp',
-        'eventos/synbio-communities/flyer2.webp',
-        'eventos/synbio-communities/flyer3.webp',
-        'eventos/synbio-communities/flyer4.webp',
-      ],
+      flyers: ['eventos/communities.webp'],
     },
     {
       tag: 'Networking',
       title: 'Networking sin Fronteras',
       desc: 'Espacio de conexión entre profesionales y estudiantes de biología sintética de distintos países de la región para ampliar redes de colaboración.',
-      flyers: ['eventos/networking/flyer1.webp'],
+      flyers: ['eventos/networking.webp'],
     },
     {
       tag: 'Sesión virtual',
       title: 'Conversatorio: Descubre la Biología Sintética en LATAM',
       desc: 'Sesión virtual organizada junto a Embajadores iGEM en América Latina para generar conciencia y entusiasmo sobre el synbio en la región.',
-      flyers: ['eventos/conversatorio/flyer1.webp', 'eventos/conversatorio/flyer2.webp'],
+      flyers: ['eventos/conversatorio.webp'],
     },
   ];
 
@@ -68,13 +58,13 @@ export class Eventos {
       tag: 'Formación intensiva',
       title: 'SynBio BootCamp',
       desc: 'Programa intensivo de formación en biología sintética donde SynBio LATAM participó activamente, acercando herramientas clave a jóvenes científicos de la región.',
-      flyers: ['eventos/synbio-bootcamp/flyer1.webp', 'eventos/synbio-bootcamp/flyer2.webp'],
+      flyers: ['eventos/bootcamp.webp'],
     },
     {
       tag: 'Simposio internacional',
       title: 'I Simposio Virtual SynBio — UNMSM',
       desc: 'Primer simposio virtual internacional de biología sintética de la UNMSM, donde SynBio LATAM estuvo presente como parte de la comunidad científica latinoamericana.',
-      flyers: ['eventos/simposio-unmsm/flyer1.webp'],
+      flyers: ['eventos/simposio-unmsm.webp'],
     },
   ];
 }
