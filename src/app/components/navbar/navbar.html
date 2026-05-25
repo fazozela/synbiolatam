@@ -24,7 +24,7 @@
             (click)="toggleDropdown('inicio')"
             class="flex items-center gap-1 px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors cursor-pointer"
           >
-            Quiénes somos
+            Inicio
             <svg [class]="inicioOpen() ? 'rotate-180 transition-transform' : 'transition-transform'" width="12" height="12" viewBox="0 0 12 12" fill="currentColor"><path d="M6 8L1 3h10z"/></svg>
           </button>
           @if (inicioOpen()) {
@@ -46,11 +46,6 @@
         <!-- Mapa SynBio -->
         <a href="/#equipo-mapa" (click)="closeAll()" class="px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors">
           Mapa SynBio
-        </a>
-
-        <!-- Equipo -->
-        <a href="/#equipo" (click)="closeAll()" class="px-3 py-2 text-sm font-500 text-gray-700 hover:text-green-700 rounded-lg hover:bg-green-50 transition-colors">
-          Equipo
         </a>
 
         <!-- Recursos dropdown -->
