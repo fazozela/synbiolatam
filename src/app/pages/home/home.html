@@ -322,16 +322,16 @@
       </div>
     </div>
 
-    <!-- Comité Experto -->
+    <!-- Comité Asesor -->
     <div class="mb-14">
       <div class="flex items-center gap-4 mb-6">
-        <h3 class="text-xs font-700 uppercase tracking-widest" style="color:#5DCAA5;">Comité Experto</h3>
+        <h3 class="text-xs font-700 uppercase tracking-widest" style="color:#5DCAA5;">Comité Asesor</h3>
         <div class="flex-1 h-px" style="background:rgba(93,202,165,0.2);"></div>
       </div>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-5">
         @for (member of comiteExperto; track member.name) {
           <div class="group rounded-2xl p-6 flex flex-col items-center gap-3 transition-all duration-300 hover:scale-105 border" style="background-color:#085041; border-color:rgba(93,202,165,0.15);">
-            <div class="w-16 h-16 rounded-full overflow-hidden border-2 flex items-center justify-center text-lg font-700" style="background-color:#E1F5EE; color:#085041; border-color:#1D9E75;">
+            <div class="w-16 h-16 rounded-full overflow-hidden border-2 flex items-center justify-center text-lg font-700" style="background-color:#ffffff; color:#085041; border-color:#1D9E75;">
               @if (member.photo) {
                 <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover" />
               } @else {
@@ -343,36 +343,6 @@
               @if (member.org) {
                 <p class="text-xs mt-1" style="color:#5DCAA5;">{{ member.org }}</p>
               }
-            </div>
-          </div>
-        }
-      </div>
-    </div>
-
-    <!-- Comunicación — Head -->
-    <div class="mb-10">
-      <div class="flex items-center gap-4 mb-6">
-        <h3 class="text-xs font-700 uppercase tracking-widest" style="color:#5DCAA5;">Comunicación</h3>
-        <div class="flex-1 h-px" style="background:rgba(93,202,165,0.2);"></div>
-      </div>
-      <div class="flex flex-wrap gap-6">
-        @for (member of comunicacion; track member.name) {
-          <div class="group flex flex-col items-center gap-3 text-center">
-            <div class="relative w-20 h-20 rounded-full overflow-hidden border-2 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
-                 style="background-color:#085041; border-color:#5DCAA5; box-shadow: 0 0 0 3px rgba(93,202,165,0.3);">
-              @if (member.photo) {
-                <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover object-top" />
-              } @else {
-                <svg viewBox="0 0 56 56" width="56" height="56" fill="none"><circle cx="28" cy="21" r="11" fill="#5DCAA5" opacity="0.6"/><path d="M6 52 C6 36 50 36 50 52" fill="#5DCAA5" opacity="0.4"/></svg>
-              }
-              <span class="absolute -top-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center text-xs" style="background:#1D9E75;">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              </span>
-            </div>
-            <div>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-xs font-600 mb-1" style="background:rgba(29,158,117,0.2);color:#5DCAA5;">Head</span>
-              <p class="text-sm font-700 text-white leading-tight">{{ member.name }}</p>
-              <p class="text-xs mt-0.5" style="color:#5DCAA5;">{{ member.flag }} {{ member.country }}</p>
             </div>
           </div>
         }
@@ -403,7 +373,7 @@
                 @if (member.isHead) {
                   <!-- Head — más grande y destacado -->
                   <div class="relative w-20 h-20 rounded-full overflow-hidden border-2 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
-                       style="background-color:#085041; border-color:#5DCAA5; box-shadow: 0 0 0 3px rgba(93,202,165,0.3);">
+                       style="background-color:#ffffff; border-color:#5DCAA5; box-shadow: 0 0 0 3px rgba(93,202,165,0.3);">
                     @if (member.photo) {
                       <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover object-top" />
                     } @else {
@@ -421,7 +391,7 @@
                 } @else {
                   <!-- Miembro regular -->
                   <div class="w-14 h-14 rounded-full overflow-hidden border-2 flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-                       style="background-color:#085041; border-color:#1D9E75;">
+                       style="background-color:#ffffff; border-color:#1D9E75;">
                     @if (member.photo) {
                       <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover object-top" />
                     } @else {
