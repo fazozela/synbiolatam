@@ -27,11 +27,43 @@
         <div class="group rounded-2xl border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col"
              style="border-color:rgba(29,158,117,0.2);">
 
-          <!-- Imagen del flyer -->
+          <!-- Carrusel / imagen -->
           <div class="relative overflow-hidden flex items-center justify-center"
-               style="height:220px; background-color:#E1F5EE;">
-            <img [src]="ev.flyers[0]" [alt]="ev.title"
-                 class="w-full h-full object-contain" />
+               style="height:240px; background-color:#E1F5EE;">
+
+            <!-- Imagen activa clickeable para modal -->
+            <img [src]="ev.flyers[getIndex(ev.title)]" [alt]="ev.title"
+                 class="w-full h-full object-contain cursor-zoom-in transition-transform duration-300 group-hover:scale-[1.02]"
+                 (click)="openModal(ev.title, ev.flyers[getIndex(ev.title)])" />
+
+            <!-- Flechas — solo si hay más de 1 foto -->
+            @if (ev.flyers.length > 1) {
+              <button (click)="prev(ev)"
+                class="absolute left-2 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-full shadow cursor-pointer transition-opacity opacity-70 hover:opacity-100"
+                style="background:rgba(8,80,65,0.75);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button (click)="next(ev)"
+                class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-full shadow cursor-pointer transition-opacity opacity-70 hover:opacity-100"
+                style="background:rgba(8,80,65,0.75);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+
+              <!-- Indicadores -->
+              <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 pointer-events-none">
+                @for (f of ev.flyers; track $index) {
+                  <span class="block w-1.5 h-1.5 rounded-full transition-all"
+                        [style.background]="$index === getIndex(ev.title) ? '#085041' : 'rgba(8,80,65,0.3)'"></span>
+                }
+              </div>
+            }
+
+            <!-- Icono lupa -->
+            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+              <span class="flex items-center justify-center w-7 h-7 rounded-full" style="background:rgba(8,80,65,0.7);">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+              </span>
+            </div>
           </div>
 
           <!-- Contenido -->
@@ -65,11 +97,38 @@
         <div class="group rounded-2xl border overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 flex flex-col"
              style="border-color:rgba(29,158,117,0.2);">
 
-          <!-- Imagen del flyer -->
+          <!-- Carrusel / imagen -->
           <div class="relative overflow-hidden flex items-center justify-center"
-               style="height:180px; background-color:#ffffff;">
-            <img [src]="ev.flyers[0]" [alt]="ev.title"
-                 class="w-full h-full object-contain" />
+               style="height:200px; background-color:#ffffff;">
+
+            <img [src]="ev.flyers[getIndex(ev.title)]" [alt]="ev.title"
+                 class="w-full h-full object-contain cursor-zoom-in transition-transform duration-300 group-hover:scale-[1.02]"
+                 (click)="openModal(ev.title, ev.flyers[getIndex(ev.title)])" />
+
+            @if (ev.flyers.length > 1) {
+              <button (click)="prev(ev)"
+                class="absolute left-2 top-1/2 -translate-y-1/2 flex items-center justify-center w-7 h-7 rounded-full shadow cursor-pointer transition-opacity opacity-70 hover:opacity-100"
+                style="background:rgba(8,80,65,0.75);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button (click)="next(ev)"
+                class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center justify-center w-7 h-7 rounded-full shadow cursor-pointer transition-opacity opacity-70 hover:opacity-100"
+                style="background:rgba(8,80,65,0.75);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+              <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5 pointer-events-none">
+                @for (f of ev.flyers; track $index) {
+                  <span class="block w-1.5 h-1.5 rounded-full transition-all"
+                        [style.background]="$index === getIndex(ev.title) ? '#085041' : 'rgba(8,80,65,0.3)'"></span>
+                }
+              </div>
+            }
+
+            <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+              <span class="flex items-center justify-center w-7 h-7 rounded-full" style="background:rgba(8,80,65,0.7);">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+              </span>
+            </div>
           </div>
 
           <!-- Contenido -->
@@ -117,3 +176,27 @@
     </div>
   </div>
 </section>
+
+<!-- ── Modal ── -->
+@if (modal()) {
+  <div class="fixed inset-0 z-[100] flex items-center justify-center p-4"
+       style="background:rgba(4,52,44,0.88); backdrop-filter:blur(6px);"
+       (click)="closeModal()">
+    <div class="relative max-w-3xl w-full rounded-2xl overflow-hidden shadow-2xl"
+         (click)="$event.stopPropagation()">
+      <div class="flex items-center justify-between px-5 py-3" style="background-color:#085041;">
+        <span class="text-sm font-600 text-white truncate">{{ modal()!.title }}</span>
+        <button (click)="closeModal()"
+                class="ml-4 shrink-0 p-1.5 rounded-full hover:bg-white/20 transition-colors text-white cursor-pointer"
+                aria-label="Cerrar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <img [src]="modal()!.src" [alt]="modal()!.title"
+           class="w-full block"
+           style="max-height:80vh; object-fit:contain; background:#fff;" />
+    </div>
+  </div>
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 interface Evento {
@@ -14,42 +14,77 @@ interface Evento {
   templateUrl: './eventos.html',
 })
 export class Eventos {
+
+  modal = signal<{ title: string; src: string } | null>(null);
+
+  openModal(title: string, src: string) {
+    this.modal.set({ title, src });
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeModal() {
+    this.modal.set(null);
+    document.body.style.overflow = '';
+  }
+
+  @HostListener('document:keydown.escape')
+  onEscape() { this.closeModal(); }
+
+  activeIndex: Record<string, number> = {};
+
+  getIndex(title: string) { return this.activeIndex[title] ?? 0; }
+
+  prev(ev: Evento) {
+    const i = this.getIndex(ev.title);
+    this.activeIndex[ev.title] = i === 0 ? ev.flyers.length - 1 : i - 1;
+  }
+
+  next(ev: Evento) {
+    const i = this.getIndex(ev.title);
+    this.activeIndex[ev.title] = i === ev.flyers.length - 1 ? 0 : i + 1;
+  }
+
   organizados: Evento[] = [
     {
       tag: 'Carreras internacionales',
       title: 'SynBio Talks',
       desc: 'Charlas con jóvenes latinoamericanos que abrieron camino en ciencia internacional — posgrados, maestrías, pasantías y research assistant en MIT, Harvard y Erasmus Mundus. Inspiración y orientación para dar el siguiente paso.',
-      flyers: ['eventos/talks.webp'],
+      flyers: ['eventos/talks/flyer-1.webp'],
     },
     {
       tag: 'Lectura crítica',
       title: 'SynBio Journal Club',
       desc: 'Espacio para compartir y discutir los avances más recientes en biología sintética. Reunimos a la comunidad latinoamericana para explorar publicaciones científicas de vanguardia.',
-      flyers: ['eventos/journal-club.webp'],
+      flyers: ['eventos/journal-club/flyer-1.webp'],
     },
     {
       tag: 'Comunidad y debate',
       title: 'SynBio Match & Discuss',
       desc: 'Aprendizaje y debate en torno a artículos científicos de frontera para conectar a jóvenes de la comunidad synbio latinoamericana y fomentar el pensamiento crítico.',
-      flyers: ['eventos/match-discuss.webp'],
+      flyers: ['eventos/match-discuss/flyer-1.webp', 'eventos/match-discuss/flyer-2.webp'],
     },
     {
       tag: 'Comunidad regional',
       title: 'SynBio Communities',
       desc: 'Encuentros y actividades que fortalecen los lazos entre comunidades locales de biología sintética en toda Latinoamérica.',
-      flyers: ['eventos/communities.webp'],
+      flyers: [
+        'eventos/synbio-communities/flyer-1.webp',
+        'eventos/synbio-communities/flyer-2.webp',
+        'eventos/synbio-communities/flyer-3.webp',
+        'eventos/synbio-communities/flyer-4.webp',
+      ],
     },
     {
       tag: 'Networking',
       title: 'Networking sin Fronteras',
       desc: 'Espacio de conexión entre profesionales y estudiantes de biología sintética de distintos países de la región para ampliar redes de colaboración.',
-      flyers: ['eventos/networking.webp'],
+      flyers: ['eventos/networking/flyer-1.webp'],
     },
     {
       tag: 'Sesión virtual',
       title: 'Conversatorio: Descubre la Biología Sintética en LATAM',
       desc: 'Sesión virtual organizada junto a Embajadores iGEM en América Latina para generar conciencia y entusiasmo sobre el synbio en la región.',
-      flyers: ['eventos/conversatorio.webp'],
+      flyers: ['eventos/conversatorio/flyer-1.webp', 'eventos/conversatorio/flyer-2.webp'],
     },
   ];
 
@@ -58,13 +93,13 @@ export class Eventos {
       tag: 'Formación intensiva',
       title: 'SynBio BootCamp',
       desc: 'Programa intensivo de formación en biología sintética donde SynBio LATAM participó activamente, acercando herramientas clave a jóvenes científicos de la región.',
-      flyers: ['eventos/bootcamp.webp'],
+      flyers: ['eventos/bootcamp/flyer-1.webp', 'eventos/bootcamp/flyer-2.webp'],
     },
     {
       tag: 'Simposio internacional',
       title: 'I Simposio Virtual SynBio — UNMSM',
       desc: 'Primer simposio virtual internacional de biología sintética de la UNMSM, donde SynBio LATAM estuvo presente como parte de la comunidad científica latinoamericana.',
-      flyers: ['eventos/simposio-unmsm.webp'],
+      flyers: ['eventos/simposio-unmsm/flyer-1.webp'],
     },
   ];
 }
