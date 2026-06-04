@@ -165,7 +165,7 @@ export class LatamMap {
         { name: 'Xavier García', role: 'Expansión', initials: 'XG', photo: 'equipo/Xavier García.png' },
         { name: 'Katherine Gabriela Silva', role: 'Capacitación', initials: 'KS', photo: 'equipo/Katherine Gabriela Silva.png' },
         { name: 'Krister Figueroa', role: 'Gestión de Actividades', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
-        { name: 'Nelson Rodríguez', role: 'Gestión de Actividades', initials: 'NR' },
+        { name: 'Nelson Mesías Rodríguez', role: 'Gestión de Actividades', initials: 'NR' },
         { name: 'Christian Andrade', role: 'Gestión de Actividades', initials: 'CA', photo: 'equipo/Christian Andrade.png' },
         { name: 'Catalina Serrano', role: 'Diseño', initials: 'CS', photo: 'equipo/Catalina Serrano Foto.png' },
         { name: 'Ashley Alban', role: 'Diseño', initials: 'AA', photo: 'equipo/Ashley Alban.png' },

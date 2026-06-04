@@ -244,7 +244,7 @@ export class Home {
         { name: 'Gloriana Corrales', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'GC', photo: 'equipo/Gloriana Corrales Masís.png' },
         { name: 'Ailey Caballero', role: 'Miembro', country: 'Panamá', flag: '🇵🇦', initials: 'AC', photo: 'equipo/Asley Caballero.png' },
         { name: 'Krister Figueroa', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
-        { name: 'Nelson Rodríguez', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'NR' },
+        { name: 'Nelson Mesías Rodríguez', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'NR' },
         { name: 'Mariane Córdoba', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'MC' },
       ],
     },
