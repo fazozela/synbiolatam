@@ -98,7 +98,6 @@ export class Home {
     'Paula Camila Gonzalez.png':                '51% 34%',
     'Matias Tosini.png':                        '51% 42%',
     'Mishell Criollo.png':                      '45% 24%',
-    'Nelson Mesías.png':                        '49% 36%',
     'Nohely Cáceres.png':                       '48% 29%',
     'Pedro Raul Mendoza.png':                   '54% 39%',
     'Pilar Montealegre Vargas.png':             '50% 44%',
