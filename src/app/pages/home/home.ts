@@ -43,7 +43,6 @@ export class Home {
   facePos: Record<string, string> = {
     'Aaron Maldonado.png':                      '49% 47%',
     'Adriana Marcela Martinez Botello.png':     '50% 18%',
-    'Mariana Cerdas Pérez.png':                 '49% 27%',
     'Alejandra Cazares.png':                    '48% 25%',
     'Alessia Vasquez.png':                      '48% 36%',
     'Alonso Segura.png':                        '44% 28%',

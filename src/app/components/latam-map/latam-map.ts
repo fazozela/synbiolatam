@@ -32,7 +32,6 @@ export class LatamMap {
 
   private facePos: Record<string, string> = {
     'Aaron Maldonado.png': '49% 47%', 'Adriana Marcela Martinez Botello.png': '50% 18%',
-    'Mariana Cerdas Pérez.png': '49% 27%',
     'Alejandra Cazares.png': '48% 25%', 'Alessia Vasquez.png': '48% 36%',
     'Alonso Segura.png': '44% 28%', 'Ana Minaya De La Peña.png': '48% 37%',
     'Anahi Najera.png': '52% 33%', 'Anaís Caviedes.png': '51% 60%',
