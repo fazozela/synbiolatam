@@ -138,6 +138,7 @@ export class LatamMap {
       id: 'CO', label: 'Colombia', flag: '🇨🇴',
       color: '#F97316', colorHover: '#FB923C',
       members: [
+        { name: 'Juan Anaya', role: 'Gestión de Proyectos', initials: 'JA', photo: 'equipo/Juan Anaya.png' },
         { name: 'Luis Camilo Díaz-Duarte', role: 'Gestión de Proyectos', initials: 'LD', photo: 'equipo/Luis Camilo Díaz-Duarte.png' },
         { name: 'Sebastian Torres', role: 'Capacitación', initials: 'ST', photo: 'equipo/Sebastián Toro.png' },
         { name: 'Juan David León Rojas', role: 'Capacitación', initials: 'JL', photo: 'equipo/Juan David Leon Rojas.png' },

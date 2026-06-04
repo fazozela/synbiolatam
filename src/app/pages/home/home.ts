@@ -190,6 +190,7 @@ export class Home {
         { name: 'Marcos Nahuel Ríos', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'MR', photo: 'equipo/Marcos Nahuel Rios.png' },
         { name: 'Anaís Caviedes', role: 'Miembro', country: 'Chile', flag: '🇨🇱', initials: 'AC', photo: 'equipo/Anaís Caviedes.png' },
         { name: 'Paula Camila González', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'PG', photo: 'equipo/Paula Camila Gonzalez.png' },
+        { name: 'Juan Anaya', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'JA', photo: 'equipo/Juan Anaya.png' },
         { name: 'Kimberly Raquel Aragón', role: 'Miembro', country: 'Guatemala', flag: '🇬🇹', initials: 'KA', photo: 'equipo/Kimberly Aragón.png' },
       ],
     },
