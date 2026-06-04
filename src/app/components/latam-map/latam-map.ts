@@ -64,8 +64,9 @@ export class LatamMap {
     'Pedro Raul Mendoza.png': '54% 39%', 'Pilar Montealegre Vargas.png': '50% 44%',
     'Rocio Coronel.png': '67% 54%', 'Rodrigo Aguirre.png': '49% 37%',
     'Sebastián Toro.png': '56% 30%', 'Uriel Miralles.png': '51% 38%',
-    'Valentina Ramírez.png': '50% 55%', 'Willka Fidel Vargas Peña.png': '50% 43%',
+    'Valentina Ramírez.png': '50% 40%', 'Willka Fidel Vargas Peña.png': '50% 43%',
     'Wladimir Tandapilco.png': '60% 33%', 'Xavier García.png': '54% 38%',
+    'Nelson Mesías.png': '49% 37%',
     'Jessica Martin.png': '52% 41%', 'Juan David Leon Rojas.png': '52% 36%',
     'Katherine Gabriela Silva.png': '46% 28%',
   };
@@ -120,7 +121,7 @@ export class LatamMap {
         { name: 'Alonso Segura', role: 'Co-Fundador', initials: 'AS', photo: 'equipo/Alonso Segura.png' },
         { name: 'Carlos Andrés Moya', role: 'Política y Regulación', initials: 'CM', photo: 'equipo/Carlos Moya.png' },
         { name: 'Gloriana Corrales', role: 'Gestión de Actividades', initials: 'GC', photo: 'equipo/Gloriana Corrales Masís.png' },
-        { name: 'Mariane Córdoba', role: 'Gestión de Actividades', initials: 'MC' },
+        { name: 'Mariana Cerdas', role: 'Gestión de Actividades', initials: 'MC' },
         { name: 'Alessia Vásquez', role: 'Diseño', initials: 'AV', photo: 'equipo/Alessia Vasquez.png' },
         { name: 'Charlize Badilla', role: 'Diseño', initials: 'CB', photo: 'equipo/Charlize Badilla Soto.png' },
       ]
@@ -165,7 +166,7 @@ export class LatamMap {
         { name: 'Xavier García', role: 'Expansión', initials: 'XG', photo: 'equipo/Xavier García.png' },
         { name: 'Katherine Gabriela Silva', role: 'Capacitación', initials: 'KS', photo: 'equipo/Katherine Gabriela Silva.png' },
         { name: 'Krister Figueroa', role: 'Gestión de Actividades', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
-        { name: 'Nelson Mesías Rodríguez', role: 'Gestión de Actividades', initials: 'NR' },
+        { name: 'Nelson Mesías Rodríguez', role: 'Gestión de Actividades', initials: 'NR', photo: 'equipo/Nelson Mesías.png' },
         { name: 'Christian Andrade', role: 'Gestión de Actividades', initials: 'CA', photo: 'equipo/Christian Andrade.png' },
         { name: 'Catalina Serrano', role: 'Diseño', initials: 'CS', photo: 'equipo/Catalina Serrano Foto.png' },
         { name: 'Ashley Alban', role: 'Diseño', initials: 'AA', photo: 'equipo/Ashley Alban.png' },
