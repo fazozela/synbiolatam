@@ -231,7 +231,7 @@ export class Home {
         { name: 'Sebastián Toro', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'ST', photo: 'equipo/Sebastián Toro.png' },
         { name: 'Juan David León Rojas', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'JL', photo: 'equipo/Juan David Leon Rojas.png' },
         { name: 'Rocío Coronel', role: 'Miembro', country: 'Paraguay', flag: '🇵🇾', initials: 'RC', photo: 'equipo/Rocio Coronel.png' },
-        { name: 'Marcela Martínez', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'MM' },
+        { name: 'Adriana Marcela Martínez', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'AM' },
       ],
     },
     {

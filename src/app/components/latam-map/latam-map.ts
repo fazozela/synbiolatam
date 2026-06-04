@@ -141,7 +141,7 @@ export class LatamMap {
         { name: 'Luis Camilo Díaz-Duarte', role: 'Gestión de Proyectos', initials: 'LD', photo: 'equipo/Luis Camilo Díaz-Duarte.png' },
         { name: 'Sebastián Toro', role: 'Capacitación', initials: 'ST', photo: 'equipo/Sebastián Toro.png' },
         { name: 'Juan David León Rojas', role: 'Capacitación', initials: 'JL', photo: 'equipo/Juan David Leon Rojas.png' },
-        { name: 'Marcela Martínez', role: 'Capacitación', initials: 'MM' },
+        { name: 'Adriana Marcela Martínez', role: 'Gestión de Actividades', initials: 'AM' },
       ]
     },
     {
