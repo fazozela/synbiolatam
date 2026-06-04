@@ -259,7 +259,7 @@ export class Home {
         { name: 'Ashley Alban', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'AA', photo: 'equipo/Ashley Alban.png' },
         { name: 'Charlize Badilla', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'CB', photo: 'equipo/Charlize Badilla Soto.png' },
         { name: 'Ana Patricia Minaya', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'AP', photo: 'equipo/Ana Minaya De La Peña.png' },
-        { name: 'Anahí Nájera', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'AN', photo: 'equipo/Anahi Najera.png' },
+        { name: 'Anahi Nájera', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'AN', photo: 'equipo/Anahi Najera.png' },
       ],
     },
     {
