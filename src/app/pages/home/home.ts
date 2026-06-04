@@ -228,7 +228,7 @@ export class Home {
         { name: 'Bastian Márquez', role: 'Head', country: 'Chile', flag: '🇨🇱', initials: 'BM', photo: 'equipo/Bastián Márquez González.png', isHead: true },
         { name: 'Jessica Martin', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'JM', photo: 'equipo/Jessica Martin.png' },
         { name: 'Katherine Gabriela Silva', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'KS', photo: 'equipo/Katherine Gabriela Silva.png' },
-        { name: 'Sebastian Torres', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'ST', photo: 'equipo/Sebastián Toro.png' },
+        { name: 'Sebastián Toro', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'ST', photo: 'equipo/Sebastián Toro.png' },
         { name: 'Juan David León Rojas', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'JL', photo: 'equipo/Juan David Leon Rojas.png' },
         { name: 'Rocío Coronel', role: 'Miembro', country: 'Paraguay', flag: '🇵🇾', initials: 'RC', photo: 'equipo/Rocio Coronel.png' },
         { name: 'Maricela Martínez', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'MM' },
