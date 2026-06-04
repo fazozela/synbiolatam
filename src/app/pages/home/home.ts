@@ -110,6 +110,9 @@ export class Home {
     'Willka Fidel Vargas Peña.png':             '50% 43%',
     'Wladimir Tandapilco.png':                  '60% 33%',
     'Xavier García.png':                        '54% 38%',
+    'Jessica Martin.png':                       '52% 41%',
+    'Juan David Leon Rojas.png':                '52% 36%',
+    'Katherine Gabriela Silva.png':             '46% 28%',
   };
 
   getPhotoPos(photo: string): string {
@@ -222,10 +225,10 @@ export class Home {
       nombre: 'Capacitación',
       miembros: [
         { name: 'Bastian Márquez', role: 'Head', country: 'Chile', flag: '🇨🇱', initials: 'BM', photo: 'equipo/Bastián Márquez González.png', isHead: true },
-        { name: 'Jessica Martin', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'JM' },
-        { name: 'Katherine Silva', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'KS' },
+        { name: 'Jessica Martin', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'JM', photo: 'equipo/Jessica Martin.png' },
+        { name: 'Katherine Gabriela Silva', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'KS', photo: 'equipo/Katherine Gabriela Silva.png' },
         { name: 'Sebastian Torres', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'ST', photo: 'equipo/Sebastián Toro.png' },
-        { name: 'Juan David León', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'JL' },
+        { name: 'Juan David León Rojas', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'JL', photo: 'equipo/Juan David Leon Rojas.png' },
         { name: 'Rocío Coronel', role: 'Miembro', country: 'Paraguay', flag: '🇵🇾', initials: 'RC', photo: 'equipo/Rocio Coronel.png' },
         { name: 'Maricela Martínez', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'MM' },
         { name: 'Gloriana Corrales', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'GC', photo: 'equipo/Gloriana Corrales Masís.png' },

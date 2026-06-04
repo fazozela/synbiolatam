@@ -66,6 +66,8 @@ export class LatamMap {
     'Sebastián Toro.png': '56% 30%', 'Uriel Miralles.png': '51% 38%',
     'Valentina Ramírez.png': '50% 25%', 'Willka Fidel Vargas Peña.png': '50% 43%',
     'Wladimir Tandapilco.png': '60% 33%', 'Xavier García.png': '54% 38%',
+    'Jessica Martin.png': '52% 41%', 'Juan David Leon Rojas.png': '52% 36%',
+    'Katherine Gabriela Silva.png': '46% 28%',
   };
 
   getPhotoPos(photo: string): string {
@@ -138,7 +140,7 @@ export class LatamMap {
       members: [
         { name: 'Luis Camilo Díaz-Duarte', role: 'Gestión de Proyectos', initials: 'LD', photo: 'equipo/Luis Camilo Díaz-Duarte.png' },
         { name: 'Sebastian Torres', role: 'Capacitación', initials: 'ST', photo: 'equipo/Sebastián Toro.png' },
-        { name: 'Juan David León', role: 'Capacitación', initials: 'JL' },
+        { name: 'Juan David León Rojas', role: 'Capacitación', initials: 'JL', photo: 'equipo/Juan David Leon Rojas.png' },
       ]
     },
     {
@@ -160,7 +162,7 @@ export class LatamMap {
         { name: 'Vladimir Tandapiico', role: 'Expansión', initials: 'VT', photo: 'equipo/Wladimir Tandapilco.png' },
         { name: 'Andrea Gualtasamin', role: 'Expansión', initials: 'AG', photo: 'equipo/Andrea Guallasamin.png' },
         { name: 'Xavier García', role: 'Expansión', initials: 'XG', photo: 'equipo/Xavier García.png' },
-        { name: 'Katherine Silva', role: 'Capacitación', initials: 'KS' },
+        { name: 'Katherine Gabriela Silva', role: 'Capacitación', initials: 'KS', photo: 'equipo/Katherine Gabriela Silva.png' },
         { name: 'Krister Figueroa', role: 'Capacitación', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
         { name: 'Nelson Rodríguez', role: 'Capacitación', initials: 'NR' },
         { name: 'Christian Andrade', role: 'Gestión de Actividades', initials: 'CA', photo: 'equipo/Christian Andrade.png' },
@@ -233,7 +235,7 @@ export class LatamMap {
         { name: 'Marcos Nahuel Ríos', role: 'Gestión de Proyectos', initials: 'MR', photo: 'equipo/Marcos Nahuel Rios.png' },
         { name: 'Estefanía Lorena Mansilla', role: 'Expansión', initials: 'EM', photo: 'equipo/Estefania Lorena Mansilla.png' },
         { name: 'María Cecilia Merino', role: 'Expansión', initials: 'MM', photo: 'equipo/María Cecilia Merino.png' },
-        { name: 'Jessica Martin', role: 'Capacitación', initials: 'JM' },
+        { name: 'Jessica Martin', role: 'Capacitación', initials: 'JM', photo: 'equipo/Jessica Martin.png' },
         { name: 'Caren Nicole Moreno', role: 'Gestión de Actividades', initials: 'CN', photo: 'equipo/Caren Moreno.png' },
         { name: 'Denis Buffa', role: 'Gestión de Actividades', initials: 'DB', photo: 'equipo/Denis Buffa.png' },
         { name: 'Debora Parodi', role: 'Diseño', initials: 'DP', photo: 'equipo/Debora Parodi.png' },
