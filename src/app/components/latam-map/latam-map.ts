@@ -84,7 +84,7 @@ export class LatamMap {
         { name: 'Jose Manuel Limón', role: 'Política y Regulación', initials: 'JL', photo: 'equipo/José Manuel Hernández Limón.png' },
         { name: 'Benjamín Mendoza', role: 'Política y Regulación', initials: 'BM', photo: 'equipo/Benjamín Mendoza.png' },
         { name: 'María Guadalupe Juárez', role: 'Política y Regulación', initials: 'GJ', photo: 'equipo/María Guadalupe Juárez Hernández.png' },
-        { name: 'Mariana Valdéz', role: 'Diseño', initials: 'MV', photo: 'equipo/Mariana Valdez Yañez.png' },
+        { name: 'Mariana Valdez', role: 'Diseño', initials: 'MV', photo: 'equipo/Mariana Valdez Yañez.png' },
         { name: 'Anahí Nájera', role: 'Diseño', initials: 'AN', photo: 'equipo/Anahi Najera.png' },
         { name: 'Andrea Ramos', role: 'Recursos e Información', initials: 'AR', photo: 'equipo/Andrea Ramos.png' },
         { name: 'Alejandra Cazares', role: 'Recursos e Información', initials: 'AC', photo: 'equipo/Alejandra Cazares.png' },
@@ -119,8 +119,8 @@ export class LatamMap {
       members: [
         { name: 'Alonso Segura', role: 'Co-Fundador', initials: 'AS', photo: 'equipo/Alonso Segura.png' },
         { name: 'Carlos Andrés Moya', role: 'Política y Regulación', initials: 'CM', photo: 'equipo/Carlos Moya.png' },
-        { name: 'Gloriana Corrales', role: 'Capacitación', initials: 'GC', photo: 'equipo/Gloriana Corrales Masís.png' },
-        { name: 'Mariane Córdoba', role: 'Capacitación', initials: 'MC' },
+        { name: 'Gloriana Corrales', role: 'Gestión de Actividades', initials: 'GC', photo: 'equipo/Gloriana Corrales Masís.png' },
+        { name: 'Mariane Córdoba', role: 'Gestión de Actividades', initials: 'MC' },
         { name: 'Alessia Vásquez', role: 'Diseño', initials: 'AV', photo: 'equipo/Alessia Vasquez.png' },
         { name: 'Charlize Badilla', role: 'Diseño', initials: 'CB', photo: 'equipo/Charlize Badilla Soto.png' },
       ]
@@ -129,7 +129,7 @@ export class LatamMap {
       id: 'PA', label: 'Panamá', flag: '🇵🇦',
       color: '#06B6D4', colorHover: '#22D3EE',
       members: [
-        { name: 'Ailey Caballero', role: 'Capacitación', initials: 'AC', photo: 'equipo/Asley Caballero.png' },
+        { name: 'Ailey Caballero', role: 'Gestión de Actividades', initials: 'AC', photo: 'equipo/Asley Caballero.png' },
         { name: 'Johan Kalil Guerra', role: 'Recursos e Información', initials: 'JG', photo: 'equipo/Johan Guerra.png' },
       ]
     },
@@ -164,8 +164,8 @@ export class LatamMap {
         { name: 'Andrea Guallasamín', role: 'Expansión', initials: 'AG', photo: 'equipo/Andrea Guallasamin.png' },
         { name: 'Xavier García', role: 'Expansión', initials: 'XG', photo: 'equipo/Xavier García.png' },
         { name: 'Katherine Gabriela Silva', role: 'Capacitación', initials: 'KS', photo: 'equipo/Katherine Gabriela Silva.png' },
-        { name: 'Krister Figueroa', role: 'Capacitación', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
-        { name: 'Nelson Rodríguez', role: 'Capacitación', initials: 'NR' },
+        { name: 'Krister Figueroa', role: 'Gestión de Actividades', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
+        { name: 'Nelson Rodríguez', role: 'Gestión de Actividades', initials: 'NR' },
         { name: 'Christian Andrade', role: 'Gestión de Actividades', initials: 'CA', photo: 'equipo/Christian Andrade.png' },
         { name: 'Catalina Serrano', role: 'Diseño', initials: 'CS', photo: 'equipo/Catalina Serrano Foto.png' },
         { name: 'Ashley Alban', role: 'Diseño', initials: 'AA', photo: 'equipo/Ashley Alban.png' },
