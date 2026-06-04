@@ -34,7 +34,7 @@ export class LatamMap {
     'Aaron Maldonado.png': '49% 47%', 'Adriana Marcela Martinez Botello.png': '48% 30%',
     'Alejandra Cazares.png': '48% 25%', 'Alessia Vasquez.png': '48% 36%',
     'Alonso Segura.png': '44% 28%', 'Ana Minaya De La Peña.png': '48% 37%',
-    'Anahi Najera.png': '52% 33%', 'Anaís Caviedes.png': '53% 31%',
+    'Anahi Najera.png': '52% 33%', 'Anaís Caviedes.png': '51% 60%',
     'Andrea Ferrufino.png': '53% 43%', 'Andrea Guallasamin.png': '51% 21%',
     'Andrea Ramos.png': '51% 48%', 'Andrea.png': '49% 28%',
     'Angie Pozo Cedeño.png': '48% 23%', 'Ashley Alban.png': '52% 36%',

@@ -48,7 +48,7 @@ export class Home {
     'Alonso Segura.png':                        '44% 28%',
     'Ana Minaya De La Peña.png':                '48% 37%',
     'Anahi Najera.png':                         '52% 33%',
-    'Anaís Caviedes.png':                       '53% 31%',
+    'Anaís Caviedes.png':                       '51% 60%',
     'Andrea Ferrufino.png':                     '53% 43%',
     'Andrea Guallasamin.png':                   '51% 21%',
     'Andrea Ramos.png':                         '51% 48%',
