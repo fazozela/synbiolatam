@@ -62,7 +62,7 @@ export class LatamMap {
     'Matias Tosini.png': '51% 42%', 'Mishell Criollo.png': '45% 24%',
     'Nohely Cáceres.png': '48% 29%',
     'Pedro Raul Mendoza.png': '54% 39%', 'Pilar Montealegre Vargas.png': '50% 44%',
-    'Rocio Coronel.png': '67% 54%', 'Rodrigo Aguirre.png': '49% 37%',
+    'Rocio Coronel.png': '46% 23%', 'Rodrigo Aguirre.png': '49% 37%',
     'Sebastián Toro.png': '56% 30%', 'Uriel Miralles.png': '51% 38%',
     'Valentina Ramírez.png': '50% 40%', 'Willka Fidel Vargas Peña.png': '50% 43%',
     'Wladimir Tandapilco.png': '60% 33%', 'Xavier García.png': '54% 38%',
