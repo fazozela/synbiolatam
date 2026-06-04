@@ -79,8 +79,6 @@ export class Home {
   comiteExperto: TeamMember[] = [
     { name: 'Daniel Domínguez', role: 'Comité Asesor', country: '', flag: '', initials: 'DD', org: 'AllBiotech' },
     { name: 'Dra. Michelle', role: 'Comité Asesor', country: '', flag: '', initials: 'Mc', org: 'IGBM' },
-    { name: 'Camilo', role: 'Comité Asesor', country: '', flag: '', initials: 'Ca', org: 'ExiGEM' },
-    { name: 'Ana Paula Acevedo', role: 'Comité Asesor', country: '', flag: '', initials: 'AP', org: 'Start-ups' },
   ];
 
   aliados: Aliado[] = [
