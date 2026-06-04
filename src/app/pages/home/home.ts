@@ -279,7 +279,7 @@ export class Home {
         { name: 'Angie Pozo', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'AP', photo: 'equipo/Angie Pozo Cedeño.png' },
         { name: 'Camil Lucía Espinoza', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'CE', photo: 'equipo/CAMIL ESPINOZA-RAMOS.png' },
         { name: 'Johan Kalil Guerra', role: 'Miembro', country: 'Panamá', flag: '🇵🇦', initials: 'JG', photo: 'equipo/Johan Guerra.png' },
-        { name: 'Jeancore Padilla', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'JP', photo: 'equipo/Jeancarla Padilla.png' },
+        { name: 'Jeancarla Padilla', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'JP', photo: 'equipo/Jeancarla Padilla.png' },
         { name: 'Ian Sebastian Terán', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'IT', photo: 'equipo/Ian Sebastian Teran.png' },
         { name: 'Alejandra Cazares', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'AC', photo: 'equipo/Alejandra Cazares.png' },
         { name: 'Jorge Barrios', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'JB', photo: 'equipo/Jorge Luis Barrios.png' },
