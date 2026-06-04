@@ -212,7 +212,7 @@ export class Home {
       nombre: 'Expansión',
       miembros: [
         { name: 'Fabrizio Yasuo Flores', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'FF', photo: 'equipo/Fabrizio Flores.png' },
-        { name: 'Estefanía Lorena Mansilla', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'EM', photo: 'equipo/Estefania Lorena Mansilla.png' },
+        { name: 'Estefanía Lorena Mansilla', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'EM', photo: 'equipo/Estefania Lorena Mansilla.png' },
         { name: 'María Cecilia Merino', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'MM', photo: 'equipo/María Cecilia Merino.png' },
         { name: 'Mishell Criollo', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'MC', photo: 'equipo/Mishell Criollo.png' },
         { name: 'Pilar Montealegre', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'PM', photo: 'equipo/Pilar Montealegre Vargas.png' },
