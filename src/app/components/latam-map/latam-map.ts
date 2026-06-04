@@ -57,6 +57,7 @@ export class LatamMap {
     'Mariana Valdez Yañez.png': '51% 55%', 'Mariela Escobar.png': '50% 42%',
     'María Belén Terán.png': '50% 31%', 'María Cecilia Merino.png': '48% 44%',
     'María Guadalupe Juárez Hernández.png': '48% 45%', 'Marko Aurelio Zapata.png': '42% 35%',
+    'Marcos Nahuel Rios.png': '52% 57%', 'Paula Camila Gonzalez.png': '51% 34%',
     'Matias Tosini.png': '51% 42%', 'Mishell Criollo.png': '45% 24%',
     'Nelson Mesías.png': '49% 36%', 'Nohely Cáceres.png': '48% 29%',
     'Pedro Raul Mendoza.png': '54% 39%', 'Pilar Montealegre Vargas.png': '50% 44%',
@@ -152,7 +153,7 @@ export class LatamMap {
       members: [
         { name: 'Leonel Anaya', role: 'Financiamiento y Sostenibilidad', initials: 'LA', photo: 'equipo/Leonel Anaya.png' },
         { name: 'Camila Naranjo', role: 'Financiamiento y Sostenibilidad', initials: 'CN', photo: 'equipo/Camila Naranjo.png' },
-        { name: 'Paula Camila González', role: 'Gestión de Proyectos', initials: 'PG' },
+        { name: 'Paula Camila González', role: 'Gestión de Proyectos', initials: 'PG', photo: 'equipo/Paula Camila Gonzalez.png' },
         { name: 'Valentina Ramírez', role: 'Política y Regulación (Head)', initials: 'VR', photo: 'equipo/Valentina Ramírez.png' },
         { name: 'Mishell Criollo', role: 'Expansión', initials: 'MC', photo: 'equipo/Mishell Criollo.png' },
         { name: 'Vladimir Tandapiico', role: 'Expansión', initials: 'VT', photo: 'equipo/Wladimir Tandapilco.png' },
@@ -177,7 +178,7 @@ export class LatamMap {
       color: '#10B981', colorHover: '#34D399',
       members: [
         { name: 'Nohely Cáceres', role: 'Financiamiento y Sostenibilidad', initials: 'NC', photo: 'equipo/Nohely Cáceres.png' },
-        { name: 'Mario Aurelio Zapata', role: 'Gestión de Proyectos', initials: 'MZ' },
+        { name: 'Marko Aurelio Zapata', role: 'Gestión de Proyectos', initials: 'MZ', photo: 'equipo/Marko Aurelio Zapata.png' },
         { name: 'Fabrizio Yasuo Flores', role: 'Expansión', initials: 'FF', photo: 'equipo/Fabrizio Flores.png' },
         { name: 'Pedro Raúl Javier Mendoza', role: 'Gestión de Actividades', initials: 'PM', photo: 'equipo/Pedro Raul Mendoza.png' },
         { name: 'Luciana Castro', role: 'Diseño', initials: 'LC', photo: 'equipo/Luciana Castro Camavilca foto en blanco.png' },
@@ -228,7 +229,7 @@ export class LatamMap {
       color: '#0EA5E9', colorHover: '#38BDF8',
       members: [
         { name: 'Mariela Escobar', role: 'Financiamiento y Sostenibilidad', initials: 'ME', photo: 'equipo/Mariela Escobar.png' },
-        { name: 'Marcos Nahuel Ríos', role: 'Gestión de Proyectos', initials: 'MR' },
+        { name: 'Marcos Nahuel Ríos', role: 'Gestión de Proyectos', initials: 'MR', photo: 'equipo/Marcos Nahuel Rios.png' },
         { name: 'Estefanía Mansilla', role: 'Expansión', initials: 'EM' },
         { name: 'María Cecilia Merino', role: 'Expansión', initials: 'MM', photo: 'equipo/María Cecilia Merino.png' },
         { name: 'Jessica Martin', role: 'Capacitación', initials: 'JM' },
