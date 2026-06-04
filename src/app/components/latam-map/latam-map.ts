@@ -194,7 +194,7 @@ export class LatamMap {
       id: 'BO', label: 'Bolivia', flag: '🇧🇴',
       color: '#84CC16', colorHover: '#A3E635',
       members: [
-        { name: 'Andrea Ferrufino', role: 'Política y Regulación', initials: 'AF', photo: 'equipo/Andrea Ferrufino.png' },
+        { name: 'Andrea Ferrufino', role: 'Gestión de Proyectos', initials: 'AF', photo: 'equipo/Andrea Ferrufino.png' },
         { name: 'Wilka Fidel Vargas', role: 'Política y Regulación', initials: 'WV', photo: 'equipo/Willka Fidel Vargas Peña.png' },
         { name: 'Estefanía Lorena Mansilla', role: 'Expansión', initials: 'EM', photo: 'equipo/Estefania Lorena Mansilla.png' },
         { name: 'Pilar Montealegre', role: 'Expansión', initials: 'PM', photo: 'equipo/Pilar Montealegre Vargas.png' },

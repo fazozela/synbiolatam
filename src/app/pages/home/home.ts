@@ -192,13 +192,13 @@ export class Home {
         { name: 'Paula Camila González', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'PG', photo: 'equipo/Paula Camila Gonzalez.png' },
         { name: 'Juan Anaya', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'JA', photo: 'equipo/Juan Anaya.png' },
         { name: 'Kimberly Raquel Aragón', role: 'Miembro', country: 'Guatemala', flag: '🇬🇹', initials: 'KA', photo: 'equipo/Kimberly Aragón.png' },
+        { name: 'Andrea Ferrufino', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'AF', photo: 'equipo/Andrea Ferrufino.png' },
       ],
     },
     {
       nombre: 'Política y Regulación',
       miembros: [
         { name: 'Valentina Ramírez', role: 'Head', country: 'Ecuador', flag: '🇪🇨', initials: 'VR', photo: 'equipo/Valentina Ramírez.png', isHead: true },
-        { name: 'Andrea Ferrufino', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'AF', photo: 'equipo/Andrea Ferrufino.png' },
         { name: 'Jose Manuel Limón', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'JL', photo: 'equipo/José Manuel Hernández Limón.png' },
         { name: 'Benjamín Mendoza', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'BM', photo: 'equipo/Benjamín Mendoza.png' },
         { name: 'María Guadalupe Juárez', role: 'Miembro', country: 'México', flag: '🇲🇽', initials: 'GJ', photo: 'equipo/María Guadalupe Juárez Hernández.png' },
