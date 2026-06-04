@@ -64,7 +64,7 @@ export class LatamMap {
     'Pedro Raul Mendoza.png': '54% 39%', 'Pilar Montealegre Vargas.png': '50% 44%',
     'Rocio Coronel.png': '67% 54%', 'Rodrigo Aguirre.png': '49% 37%',
     'Sebastián Toro.png': '56% 30%', 'Uriel Miralles.png': '51% 38%',
-    'Valentina Ramírez.png': '50% 25%', 'Willka Fidel Vargas Peña.png': '50% 43%',
+    'Valentina Ramírez.png': '50% 55%', 'Willka Fidel Vargas Peña.png': '50% 43%',
     'Wladimir Tandapilco.png': '60% 33%', 'Xavier García.png': '54% 38%',
     'Jessica Martin.png': '52% 41%', 'Juan David Leon Rojas.png': '52% 36%',
     'Katherine Gabriela Silva.png': '46% 28%',

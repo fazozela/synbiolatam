@@ -106,7 +106,7 @@ export class Home {
     'Rodrigo Aguirre.png':                      '49% 37%',
     'Sebastián Toro.png':                       '56% 30%',
     'Uriel Miralles.png':                       '51% 38%',
-    'Valentina Ramírez.png':                    '50% 25%',
+    'Valentina Ramírez.png':                    '50% 55%',
     'Willka Fidel Vargas Peña.png':             '50% 43%',
     'Wladimir Tandapilco.png':                  '60% 33%',
     'Xavier García.png':                        '54% 38%',
