@@ -51,7 +51,7 @@ export class Home {
     'Anaís Caviedes.png':                       '53% 31%',
     'Andrea Ferrufino.png':                     '53% 43%',
     'Andrea Guallasamin.png':                   '51% 21%',
-    'Andrea Ramos.png':                         '50% 25%',
+    'Andrea Ramos.png':                         '51% 48%',
     'Andrea.png':                               '49% 28%',
     'Angie Pozo Cedeño.png':                    '48% 23%',
     'Ashley Alban.png':                         '52% 36%',
@@ -264,7 +264,7 @@ export class Home {
     {
       nombre: 'Audiovisual',
       miembros: [
-        { name: 'Belén Tosini', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'BT' },
+        { name: 'Belén Endara', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'BE', photo: 'equipo/Belén Endara.png' },
         { name: 'Matías Tosini', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'MT', photo: 'equipo/Matias Tosini.png' },
         { name: 'Aaron Maldonado', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'AM', photo: 'equipo/Aaron Maldonado.png' },
       ],
