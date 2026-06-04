@@ -31,7 +31,8 @@ export class LatamMap {
   tooltipY = signal(0);
 
   private facePos: Record<string, string> = {
-    'Aaron Maldonado.png': '49% 47%', 'Adriana Marcela Martinez Botello.png': '48% 30%',
+    'Aaron Maldonado.png': '49% 47%', 'Adriana Marcela Martinez Botello.png': '50% 18%',
+    'Mariana Cerdas Pérez.png': '49% 27%',
     'Alejandra Cazares.png': '48% 25%', 'Alessia Vasquez.png': '48% 36%',
     'Alonso Segura.png': '44% 28%', 'Ana Minaya De La Peña.png': '48% 37%',
     'Anahi Najera.png': '52% 33%', 'Anaís Caviedes.png': '51% 60%',
@@ -121,7 +122,7 @@ export class LatamMap {
         { name: 'Alonso Segura', role: 'Co-Fundador', initials: 'AS', photo: 'equipo/Alonso Segura.png' },
         { name: 'Carlos Andrés Moya', role: 'Política y Regulación', initials: 'CM', photo: 'equipo/Carlos Moya.png' },
         { name: 'Gloriana Corrales', role: 'Gestión de Actividades', initials: 'GC', photo: 'equipo/Gloriana Corrales Masís.png' },
-        { name: 'Mariana Cerdas', role: 'Gestión de Actividades', initials: 'MC' },
+        { name: 'Mariana Cerdas', role: 'Gestión de Actividades', initials: 'MC', photo: 'equipo/Mariana Cerdas Pérez.png' },
         { name: 'Alessia Vásquez', role: 'Diseño', initials: 'AV', photo: 'equipo/Alessia Vasquez.png' },
         { name: 'Charlize Badilla', role: 'Diseño', initials: 'CB', photo: 'equipo/Charlize Badilla Soto.png' },
       ]
@@ -142,7 +143,7 @@ export class LatamMap {
         { name: 'Luis Camilo Díaz-Duarte', role: 'Gestión de Proyectos', initials: 'LD', photo: 'equipo/Luis Camilo Díaz-Duarte.png' },
         { name: 'Sebastián Toro', role: 'Capacitación', initials: 'ST', photo: 'equipo/Sebastián Toro.png' },
         { name: 'Juan David León Rojas', role: 'Capacitación', initials: 'JL', photo: 'equipo/Juan David Leon Rojas.png' },
-        { name: 'Adriana Marcela Martínez', role: 'Gestión de Actividades', initials: 'AM' },
+        { name: 'Adriana Marcela Martínez', role: 'Gestión de Actividades', initials: 'AM', photo: 'equipo/Adriana Marcela Martinez Botello.png' },
       ]
     },
     {

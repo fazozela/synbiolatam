@@ -42,7 +42,8 @@ export class Home {
 
   facePos: Record<string, string> = {
     'Aaron Maldonado.png':                      '49% 47%',
-    'Adriana Marcela Martinez Botello.png':     '48% 30%',
+    'Adriana Marcela Martinez Botello.png':     '50% 18%',
+    'Mariana Cerdas Pérez.png':                 '49% 27%',
     'Alejandra Cazares.png':                    '48% 25%',
     'Alessia Vasquez.png':                      '48% 36%',
     'Alonso Segura.png':                        '44% 28%',
@@ -231,7 +232,7 @@ export class Home {
         { name: 'Sebastián Toro', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'ST', photo: 'equipo/Sebastián Toro.png' },
         { name: 'Juan David León Rojas', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'JL', photo: 'equipo/Juan David Leon Rojas.png' },
         { name: 'Rocío Coronel', role: 'Miembro', country: 'Paraguay', flag: '🇵🇾', initials: 'RC', photo: 'equipo/Rocio Coronel.png' },
-        { name: 'Adriana Marcela Martínez', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'AM' },
+        { name: 'Adriana Marcela Martínez', role: 'Miembro', country: 'Colombia', flag: '🇨🇴', initials: 'AM', photo: 'equipo/Adriana Marcela Martinez Botello.png' },
       ],
     },
     {
@@ -245,7 +246,7 @@ export class Home {
         { name: 'Ailey Caballero', role: 'Miembro', country: 'Panamá', flag: '🇵🇦', initials: 'AC', photo: 'equipo/Asley Caballero.png' },
         { name: 'Krister Figueroa', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
         { name: 'Nelson Mesías Rodríguez', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'NR', photo: 'equipo/Nelson Mesías.png' },
-        { name: 'Mariana Cerdas', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'MC' },
+        { name: 'Mariana Cerdas', role: 'Miembro', country: 'Costa Rica', flag: '🇨🇷', initials: 'MC', photo: 'equipo/Mariana Cerdas Pérez.png' },
       ],
     },
     {
