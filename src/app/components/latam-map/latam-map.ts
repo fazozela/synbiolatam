@@ -50,7 +50,7 @@ export class LatamMap {
     'Javier David-Uzcategui.png': '47% 49%', 'Jeancarla Padilla.png': '31% 26%',
     'Johan Guerra.png': '39% 51%', 'Jorge Luis Barrios.png': '57% 32%',
     'José Manuel Hernández Limón.png': '48% 42%', 'Josue Alvarez.png': '49% 35%',
-    'Juan Anaya.png': '40% 39%', 'Katherine Girón.png': '49% 40%',
+    'Juan Anaya.png': '53% 44%', 'Katherine Girón.png': '49% 40%',
     'Kimberly Aragón.png': '52% 40%', 'Krister Figueroa.png': '47% 56%',
     'Leonel Anaya.png': '44% 37%', 'Luciana Castro Camavilca foto en blanco.png': '47% 51%',
     'Luis Camilo Díaz-Duarte.png': '52% 33%', 'Mariana Cerdas Pérez.png': '49% 27%',

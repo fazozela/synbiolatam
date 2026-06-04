@@ -80,7 +80,7 @@ export class Home {
     'Jorge Luis Barrios.png':                   '57% 32%',
     'José Manuel Hernández Limón.png':          '48% 42%',
     'Josue Alvarez.png':                        '49% 35%',
-    'Juan Anaya.png':                           '40% 39%',
+    'Juan Anaya.png':                           '53% 44%',
     'Katherine Girón.png':                      '49% 40%',
     'Kimberly Aragón.png':                      '52% 40%',
     'Krister Figueroa.png':                     '47% 56%',
