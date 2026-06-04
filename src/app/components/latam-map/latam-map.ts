@@ -130,7 +130,7 @@ export class LatamMap {
       id: 'PA', label: 'Panamá', flag: '🇵🇦',
       color: '#06B6D4', colorHover: '#22D3EE',
       members: [
-        { name: 'Ailey Caballero', role: 'Gestión de Actividades', initials: 'AC', photo: 'equipo/Asley Caballero.png' },
+        { name: 'Asley Caballero', role: 'Gestión de Actividades', initials: 'AC', photo: 'equipo/Asley Caballero.png' },
         { name: 'Johan Kalil Guerra', role: 'Recursos e Información', initials: 'JG', photo: 'equipo/Johan Guerra.png' },
       ]
     },
