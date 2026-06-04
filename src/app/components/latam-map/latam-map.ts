@@ -58,6 +58,7 @@ export class LatamMap {
     'María Belén Terán.png': '50% 31%', 'María Cecilia Merino.png': '48% 44%',
     'María Guadalupe Juárez Hernández.png': '48% 45%', 'Marko Aurelio Zapata.png': '42% 35%',
     'Marcos Nahuel Rios.png': '52% 57%', 'Paula Camila Gonzalez.png': '51% 34%',
+    'Estefania Lorena Mansilla.png': '51% 41%',
     'Matias Tosini.png': '51% 42%', 'Mishell Criollo.png': '45% 24%',
     'Nelson Mesías.png': '49% 36%', 'Nohely Cáceres.png': '48% 29%',
     'Pedro Raul Mendoza.png': '54% 39%', 'Pilar Montealegre Vargas.png': '50% 44%',
@@ -192,7 +193,7 @@ export class LatamMap {
       members: [
         { name: 'Andrea Ferrufino', role: 'Política y Regulación', initials: 'AF', photo: 'equipo/Andrea Ferrufino.png' },
         { name: 'Wilka Fidel Vargas', role: 'Política y Regulación', initials: 'WV', photo: 'equipo/Willka Fidel Vargas Peña.png' },
-        { name: 'Estefanía Mansilla', role: 'Expansión', initials: 'EM' },
+        { name: 'Estefanía Lorena Mansilla', role: 'Expansión', initials: 'EM', photo: 'equipo/Estefania Lorena Mansilla.png' },
         { name: 'Pilar Montealegre', role: 'Expansión', initials: 'PM', photo: 'equipo/Pilar Montealegre Vargas.png' },
         { name: 'Rodrigo Aguirre', role: 'Expansión', initials: 'RA', photo: 'equipo/Rodrigo Aguirre.png' },
         { name: 'Jeancore Padilla', role: 'Recursos e Información', initials: 'JP', photo: 'equipo/Jeancarla Padilla.png' },
@@ -230,7 +231,7 @@ export class LatamMap {
       members: [
         { name: 'Mariela Escobar', role: 'Financiamiento y Sostenibilidad', initials: 'ME', photo: 'equipo/Mariela Escobar.png' },
         { name: 'Marcos Nahuel Ríos', role: 'Gestión de Proyectos', initials: 'MR', photo: 'equipo/Marcos Nahuel Rios.png' },
-        { name: 'Estefanía Mansilla', role: 'Expansión', initials: 'EM' },
+        { name: 'Estefanía Lorena Mansilla', role: 'Expansión', initials: 'EM', photo: 'equipo/Estefania Lorena Mansilla.png' },
         { name: 'María Cecilia Merino', role: 'Expansión', initials: 'MM', photo: 'equipo/María Cecilia Merino.png' },
         { name: 'Jessica Martin', role: 'Capacitación', initials: 'JM' },
         { name: 'Caren Nicole Moreno', role: 'Gestión de Actividades', initials: 'CN', photo: 'equipo/Caren Moreno.png' },
