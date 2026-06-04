@@ -154,7 +154,7 @@ export class LatamMap {
       id: 'EC', label: 'Ecuador', flag: '🇪🇨',
       color: '#3B82F6', colorHover: '#60A5FA',
       members: [
-        { name: 'Leonel Anaya', role: 'Financiamiento y Sostenibilidad', initials: 'LA', photo: 'equipo/Leonel Anaya.png' },
+        { name: 'Leonel Intriago', role: 'Financiamiento y Sostenibilidad', initials: 'LI', photo: 'equipo/Intriago Leonel.png' },
         { name: 'Camila Naranjo', role: 'Financiamiento y Sostenibilidad', initials: 'CN', photo: 'equipo/Camila Naranjo.png' },
         { name: 'Paula Camila González', role: 'Gestión de Proyectos', initials: 'PG', photo: 'equipo/Paula Camila Gonzalez.png' },
         { name: 'Valentina Ramírez', role: 'Política y Regulación (Head)', initials: 'VR', photo: 'equipo/Valentina Ramírez.png' },

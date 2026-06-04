@@ -175,7 +175,7 @@ export class Home {
     {
       nombre: 'Financiamiento y Sostenibilidad',
       miembros: [
-        { name: 'Leonel Anaya', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'LA', photo: 'equipo/Leonel Anaya.png' },
+        { name: 'Leonel Intriago', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'LI', photo: 'equipo/Intriago Leonel.png' },
         { name: 'Camila Naranjo', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'CN', photo: 'equipo/Camila Naranjo.png' },
         { name: 'Mariela Escobar', role: 'Miembro', country: 'Argentina', flag: '🇦🇷', initials: 'ME', photo: 'equipo/Mariela Escobar.png' },
         { name: 'Nohely Cáceres', role: 'Miembro', country: 'Perú', flag: '🇵🇪', initials: 'NC', photo: 'equipo/Nohely Cáceres.png' },
