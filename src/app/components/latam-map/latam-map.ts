@@ -160,7 +160,7 @@ export class LatamMap {
         { name: 'Paula Camila González', role: 'Gestión de Proyectos', initials: 'PG', photo: 'equipo/Paula Camila Gonzalez.png' },
         { name: 'Valentina Ramírez', role: 'Política y Regulación (Head)', initials: 'VR', photo: 'equipo/Valentina Ramírez.png' },
         { name: 'Mishell Criollo', role: 'Expansión', initials: 'MC', photo: 'equipo/Mishell Criollo.png' },
-        { name: 'Vladimir Tandapiico', role: 'Expansión', initials: 'VT', photo: 'equipo/Wladimir Tandapilco.png' },
+        { name: 'Wladimir Tandapilco', role: 'Expansión', initials: 'WT', photo: 'equipo/Wladimir Tandapilco.png' },
         { name: 'Andrea Gualtasamin', role: 'Expansión', initials: 'AG', photo: 'equipo/Andrea Guallasamin.png' },
         { name: 'Xavier García', role: 'Expansión', initials: 'XG', photo: 'equipo/Xavier García.png' },
         { name: 'Katherine Gabriela Silva', role: 'Capacitación', initials: 'KS', photo: 'equipo/Katherine Gabriela Silva.png' },

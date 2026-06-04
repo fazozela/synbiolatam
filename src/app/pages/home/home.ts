@@ -217,7 +217,7 @@ export class Home {
         { name: 'Mishell Criollo', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'MC', photo: 'equipo/Mishell Criollo.png' },
         { name: 'Pilar Montealegre', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'PM', photo: 'equipo/Pilar Montealegre Vargas.png' },
         { name: 'Rodrigo Aguirre', role: 'Miembro', country: 'Bolivia', flag: '🇧🇴', initials: 'RA', photo: 'equipo/Rodrigo Aguirre.png' },
-        { name: 'Vladimir Tandapiico', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'VT', photo: 'equipo/Wladimir Tandapilco.png' },
+        { name: 'Wladimir Tandapilco', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'WT', photo: 'equipo/Wladimir Tandapilco.png' },
         { name: 'Andrea Gualtasamin', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'AG', photo: 'equipo/Andrea Guallasamin.png' },
         { name: 'Xavier García', role: 'Miembro', country: 'Ecuador', flag: '🇪🇨', initials: 'XG', photo: 'equipo/Xavier García.png' },
       ],
