@@ -120,7 +120,6 @@ export class LatamMap {
         { name: 'Alonso Segura', role: 'Co-Fundador', initials: 'AS', photo: 'equipo/Alonso Segura.png' },
         { name: 'Carlos Andrés Moya', role: 'Política y Regulación', initials: 'CM', photo: 'equipo/Carlos Moya.png' },
         { name: 'Gloriana Corrales', role: 'Capacitación', initials: 'GC', photo: 'equipo/Gloriana Corrales Masís.png' },
-        { name: 'Maricela Martínez', role: 'Capacitación', initials: 'MM' },
         { name: 'Mariane Córdoba', role: 'Capacitación', initials: 'MC' },
         { name: 'Alessia Vásquez', role: 'Diseño', initials: 'AV', photo: 'equipo/Alessia Vasquez.png' },
         { name: 'Charlize Badilla', role: 'Diseño', initials: 'CB', photo: 'equipo/Charlize Badilla Soto.png' },
@@ -142,6 +141,7 @@ export class LatamMap {
         { name: 'Luis Camilo Díaz-Duarte', role: 'Gestión de Proyectos', initials: 'LD', photo: 'equipo/Luis Camilo Díaz-Duarte.png' },
         { name: 'Sebastián Toro', role: 'Capacitación', initials: 'ST', photo: 'equipo/Sebastián Toro.png' },
         { name: 'Juan David León Rojas', role: 'Capacitación', initials: 'JL', photo: 'equipo/Juan David Leon Rojas.png' },
+        { name: 'Marcela Martínez', role: 'Capacitación', initials: 'MM' },
       ]
     },
     {
