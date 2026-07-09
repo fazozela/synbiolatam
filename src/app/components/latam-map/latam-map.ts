@@ -77,6 +77,11 @@ export class LatamMap {
     return this.facePos[filename] ?? '50% 20%';
   }
 
+  headsFirst(members: CountryMember[]): CountryMember[] {
+    const isHead = (m: CountryMember) => m.role.includes('(Head)');
+    return [...members].sort((a, b) => Number(isHead(b)) - Number(isHead(a)));
+  }
+
   countries: CountryData[] = [
     {
       id: 'MX', label: 'México', flag: '🇲🇽',

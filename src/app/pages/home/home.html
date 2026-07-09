@@ -368,7 +368,7 @@
           </div>
 
           <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
-            @for (member of comision.miembros; track member.name) {
+            @for (member of headsFirst(comision.miembros); track member.name) {
               <div class="group flex flex-col items-center gap-2 text-center">
                 @if (member.isHead) {
                   <!-- Head — más grande y destacado -->

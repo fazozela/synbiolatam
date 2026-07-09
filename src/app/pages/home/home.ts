@@ -118,6 +118,10 @@ export class Home {
     return this.facePos[filename] ?? '50% 20%';
   }
 
+  headsFirst(miembros: TeamMember[]): TeamMember[] {
+    return [...miembros].sort((a, b) => (b.isHead ? 1 : 0) - (a.isHead ? 1 : 0));
+  }
+
   pilares: Pilar[] = [
     {
       num: '01',
