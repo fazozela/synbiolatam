@@ -63,6 +63,9 @@ export class Eventos {
       desc: 'Aprendizaje y debate en torno a artículos científicos de frontera para conectar a jóvenes de la comunidad synbio latinoamericana y fomentar el pensamiento crítico.',
       flyers: ['eventos/match-discuss/flyer-1.webp', 'eventos/match-discuss/flyer-2.webp'],
     },
+  ];
+
+  participamos: Evento[] = [
     {
       tag: 'Comunidad regional',
       title: 'SynBio Communities',
@@ -86,9 +89,6 @@ export class Eventos {
       desc: 'Sesión virtual organizada junto a Embajadores iGEM en América Latina para generar conciencia y entusiasmo sobre el synbio en la región.',
       flyers: ['eventos/conversatorio/flyer-1.webp', 'eventos/conversatorio/flyer-2.webp'],
     },
-  ];
-
-  participamos: Evento[] = [
     {
       tag: 'Formación intensiva',
       title: 'SynBio BootCamp',
