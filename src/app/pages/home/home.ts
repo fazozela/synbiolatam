@@ -67,6 +67,7 @@ export class Home {
     'Catalina Serrano Foto.png':                '49% 44%',
     'Charlize Badilla Soto.png':                '52% 40%',
     'Christian Andrade.png':                    '49% 38%',
+    'Daniel Domínguez.png':                     '50% 16%',
     'Debora Parodi.png':                        '51% 26%',
     'Denis Buffa.png':                          '34% 36%',
     'Estefania Lorena Mansilla.png':             '51% 41%',
@@ -157,8 +158,7 @@ export class Home {
   ];
 
   comiteExperto: TeamMember[] = [
-    { name: 'Daniel Domínguez', role: 'Comité Asesor', country: '', flag: '', initials: 'DD', org: 'AllBiotech' },
-    { name: 'Dra. Michelle', role: 'Comité Asesor', country: '', flag: '', initials: 'Mc', org: 'IGBM' },
+    { name: 'Daniel Domínguez', role: 'Comité Asesor', country: '', flag: '', initials: 'DD', org: 'AllBiotech', photo: 'equipo/Daniel Domínguez.png' },
   ];
 
   aliados: Aliado[] = [

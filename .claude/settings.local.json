@@ -49,7 +49,9 @@
       "Bash(git checkout *)",
       "Bash(git push *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(awk '{print $5}')"
     ]
   }
 }
