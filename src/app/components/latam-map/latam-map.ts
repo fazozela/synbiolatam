@@ -31,7 +31,7 @@ export class LatamMap {
   tooltipY = signal(0);
 
   private facePos: Record<string, string> = {
-    'Aaron Maldonado.png': '49% 47%', 'Adriana Marcela Martinez Botello.png': '50% 18%',
+    'Aaron Maldonado.png': '49% 47%',
     'Alejandra Cazares.png': '48% 25%', 'Alessia Vasquez.png': '48% 36%',
     'Alejandro Vallejo.png': '45% 33%',
     'Alonso Segura.png': '44% 28%', 'Ana Minaya De La Peña.png': '48% 37%',
@@ -51,7 +51,7 @@ export class LatamMap {
     'Javier David-Uzcategui.png': '47% 49%', 'Jeancarla Padilla.png': '31% 26%',
     'Johan Guerra.png': '39% 51%', 'Jorge Luis Barrios.png': '57% 32%',
     'José Manuel Hernández Limón.png': '48% 42%', 'Josue Alvarez.png': '49% 35%',
-    'Juan Anaya.png': '53% 44%', 'Katherine Girón.png': '49% 40%',
+    'Katherine Girón.png': '49% 40%',
     'Kimberly Aragón.png': '52% 40%', 'Krister Figueroa.png': '47% 56%',
     'Leonel Anaya.png': '44% 37%', 'Luciana Castro Camavilca foto en blanco.png': '47% 51%',
     'Luis Camilo Díaz-Duarte.png': '52% 33%', 'Mariana Cerdas Pérez.png': '49% 27%',
@@ -66,7 +66,7 @@ export class LatamMap {
     'Rocio Coronel.png': '46% 23%', 'Rodrigo Aguirre.png': '49% 37%',
     'Sebastián Toro.png': '56% 30%', 'Uriel Miralles.png': '51% 38%',
     'Valentina Ramírez.png': '50% 40%', 'Willka Fidel Vargas Peña.png': '50% 43%',
-    'Wladimir Tandapilco.png': '60% 33%', 'Xavier García.png': '54% 38%',
+    'Wladimir Tandapilco.png': '60% 33%',
     'Nelson Mesías.png': '49% 37%',
     'Jessica Martin.png': '52% 41%', 'Juan David Leon Rojas.png': '52% 36%',
     'Katherine Gabriela Silva.png': '46% 28%',
@@ -139,11 +139,9 @@ export class LatamMap {
       id: 'CO', label: 'Colombia', flag: '🇨🇴',
       color: '#F97316', colorHover: '#FB923C',
       members: [
-        { name: 'Juan Anaya', role: 'Gestión de Proyectos', initials: 'JA', photo: 'equipo/Juan Anaya.png' },
         { name: 'Luis Camilo Díaz-Duarte', role: 'Gestión de Proyectos', initials: 'LD', photo: 'equipo/Luis Camilo Díaz-Duarte.png' },
         { name: 'Sebastián Toro', role: 'Capacitación', initials: 'ST', photo: 'equipo/Sebastián Toro.png' },
         { name: 'Juan David León Rojas', role: 'Capacitación', initials: 'JL', photo: 'equipo/Juan David Leon Rojas.png' },
-        { name: 'Adriana Marcela Martínez', role: 'Gestión de Actividades', initials: 'AM', photo: 'equipo/Adriana Marcela Martinez Botello.png' },
       ]
     },
     {
@@ -164,7 +162,6 @@ export class LatamMap {
         { name: 'Mishell Criollo', role: 'Expansión', initials: 'MC', photo: 'equipo/Mishell Criollo.png' },
         { name: 'Wladimir Tandapilco', role: 'Expansión', initials: 'WT', photo: 'equipo/Wladimir Tandapilco.png' },
         { name: 'Andrea Guallasamín', role: 'Expansión', initials: 'AG', photo: 'equipo/Andrea Guallasamin.png' },
-        { name: 'Xavier García', role: 'Expansión', initials: 'XG', photo: 'equipo/Xavier García.png' },
         { name: 'Katherine Gabriela Silva', role: 'Capacitación', initials: 'KS', photo: 'equipo/Katherine Gabriela Silva.png' },
         { name: 'Krister Figueroa', role: 'Gestión de Actividades (Head)', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
         { name: 'Nelson Mesías Rodríguez', role: 'Gestión de Actividades (Head)', initials: 'NR', photo: 'equipo/Nelson Mesías.png' },
