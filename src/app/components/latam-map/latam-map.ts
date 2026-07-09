@@ -33,6 +33,7 @@ export class LatamMap {
   private facePos: Record<string, string> = {
     'Aaron Maldonado.png': '49% 47%', 'Adriana Marcela Martinez Botello.png': '50% 18%',
     'Alejandra Cazares.png': '48% 25%', 'Alessia Vasquez.png': '48% 36%',
+    'Alejandro Vallejo.png': '45% 33%',
     'Alonso Segura.png': '44% 28%', 'Ana Minaya De La Peña.png': '48% 37%',
     'Anahi Najera.png': '52% 33%', 'Anaís Caviedes.png': '51% 60%',
     'Andrea Ferrufino.png': '53% 43%', 'Andrea Guallasamin.png': '51% 21%',
@@ -86,9 +87,9 @@ export class LatamMap {
         { name: 'Benjamín Mendoza', role: 'Política y Regulación', initials: 'BM', photo: 'equipo/Benjamín Mendoza.png' },
         { name: 'María Guadalupe Juárez', role: 'Política y Regulación', initials: 'GJ', photo: 'equipo/María Guadalupe Juárez Hernández.png' },
         { name: 'Mariana Valdez', role: 'Diseño', initials: 'MV', photo: 'equipo/Mariana Valdez Yañez.png' },
-        { name: 'Anahi Nájera', role: 'Diseño', initials: 'AN', photo: 'equipo/Anahi Najera.png' },
+        { name: 'Anahi Nájera', role: 'Diseño (Head)', initials: 'AN', photo: 'equipo/Anahi Najera.png' },
         { name: 'Andrea Ramos', role: 'Recursos e Información', initials: 'AR', photo: 'equipo/Andrea Ramos.png' },
-        { name: 'Alejandra Cazares', role: 'Recursos e Información', initials: 'AC', photo: 'equipo/Alejandra Cazares.png' },
+        { name: 'Alejandra Cazares', role: 'Recursos e Información (Head)', initials: 'AC', photo: 'equipo/Alejandra Cazares.png' },
       ]
     },
     {
@@ -165,8 +166,8 @@ export class LatamMap {
         { name: 'Andrea Guallasamín', role: 'Expansión', initials: 'AG', photo: 'equipo/Andrea Guallasamin.png' },
         { name: 'Xavier García', role: 'Expansión', initials: 'XG', photo: 'equipo/Xavier García.png' },
         { name: 'Katherine Gabriela Silva', role: 'Capacitación', initials: 'KS', photo: 'equipo/Katherine Gabriela Silva.png' },
-        { name: 'Krister Figueroa', role: 'Gestión de Actividades', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
-        { name: 'Nelson Mesías Rodríguez', role: 'Gestión de Actividades', initials: 'NR', photo: 'equipo/Nelson Mesías.png' },
+        { name: 'Krister Figueroa', role: 'Gestión de Actividades (Head)', initials: 'KF', photo: 'equipo/Krister Figueroa.png' },
+        { name: 'Nelson Mesías Rodríguez', role: 'Gestión de Actividades (Head)', initials: 'NR', photo: 'equipo/Nelson Mesías.png' },
         { name: 'Christian Andrade', role: 'Gestión de Actividades', initials: 'CA', photo: 'equipo/Christian Andrade.png' },
         { name: 'Catalina Serrano', role: 'Diseño', initials: 'CS', photo: 'equipo/Catalina Serrano Foto.png' },
         { name: 'Ashley Alban', role: 'Diseño', initials: 'AA', photo: 'equipo/Ashley Alban.png' },
@@ -196,7 +197,7 @@ export class LatamMap {
       color: '#84CC16', colorHover: '#A3E635',
       members: [
         { name: 'Andrea Ferrufino', role: 'Gestión de Proyectos', initials: 'AF', photo: 'equipo/Andrea Ferrufino.png' },
-        { name: 'Wilka Fidel Vargas', role: 'Política y Regulación', initials: 'WV', photo: 'equipo/Willka Fidel Vargas Peña.png' },
+        { name: 'Willka Fidel Vargas', role: 'Política y Regulación', initials: 'WV', photo: 'equipo/Willka Fidel Vargas Peña.png' },
         { name: 'Estefanía Lorena Mansilla', role: 'Expansión', initials: 'EM', photo: 'equipo/Estefania Lorena Mansilla.png' },
         { name: 'Pilar Montealegre', role: 'Expansión', initials: 'PM', photo: 'equipo/Pilar Montealegre Vargas.png' },
         { name: 'Rodrigo Aguirre', role: 'Expansión', initials: 'RA', photo: 'equipo/Rodrigo Aguirre.png' },
@@ -248,7 +249,7 @@ export class LatamMap {
       id: 'DO', label: 'Rep. Dominicana', flag: '🇩🇴',
       color: '#6366F1', colorHover: '#818CF8',
       members: [
-        { name: 'Alejandro Vallejo', role: 'Política y Regulación', initials: 'AV' },
+        { name: 'Alejandro Vallejo', role: 'Política y Regulación', initials: 'AV', photo: 'equipo/Alejandro Vallejo.png' },
       ]
     },
   ];
