@@ -128,7 +128,7 @@ export class LatamMap {
         { name: 'Carlos Andrés Moya', role: 'Política y Regulación', initials: 'CM', photo: 'equipo/Carlos Moya.png' },
         { name: 'Gloriana Corrales', role: 'Gestión de Actividades', initials: 'GC', photo: 'equipo/Gloriana Corrales Masís.png' },
         { name: 'Mariana Cerdas', role: 'Gestión de Actividades', initials: 'MC', photo: 'equipo/Mariana Cerdas Pérez.png' },
-        { name: 'Alessia Vásquez', role: 'Diseño', initials: 'AV', photo: 'equipo/Alessia Vasquez.png' },
+        { name: 'Alessia Vásquez', role: 'Diseño (Head)', initials: 'AV', photo: 'equipo/Alessia Vasquez.png' },
         { name: 'Charlize Badilla', role: 'Diseño', initials: 'CB', photo: 'equipo/Charlize Badilla Soto.png' },
       ]
     },
@@ -202,7 +202,7 @@ export class LatamMap {
         { name: 'Willka Fidel Vargas', role: 'Política y Regulación', initials: 'WV', photo: 'equipo/Willka Fidel Vargas Peña.png' },
         { name: 'Estefanía Lorena Mansilla', role: 'Expansión', initials: 'EM', photo: 'equipo/Estefania Lorena Mansilla.png' },
         { name: 'Pilar Montealegre', role: 'Expansión', initials: 'PM', photo: 'equipo/Pilar Montealegre Vargas.png' },
-        { name: 'Rodrigo Aguirre', role: 'Expansión', initials: 'RA', photo: 'equipo/Rodrigo Aguirre.png' },
+        { name: 'Rodrigo Aguirre', role: 'Expansión (Head)', initials: 'RA', photo: 'equipo/Rodrigo Aguirre.png' },
         { name: 'Jeancarla Padilla', role: 'Recursos e Información', initials: 'JP', photo: 'equipo/Jeancarla Padilla.png' },
         { name: 'Ian Sebastian Terán', role: 'Recursos e Información', initials: 'IT', photo: 'equipo/Ian Sebastian Teran.png' },
       ]
