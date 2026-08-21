@@ -32,7 +32,7 @@
                style="height:240px; background-color:#E1F5EE;">
 
             <!-- Imagen activa clickeable para modal -->
-            <img [src]="ev.flyers[getIndex(ev.title)]" [alt]="ev.title"
+            <img loading="lazy" decoding="async" [src]="ev.flyers[getIndex(ev.title)]" [alt]="ev.title"
                  class="w-full h-full object-contain cursor-zoom-in transition-transform duration-300 group-hover:scale-[1.02]"
                  (click)="openModal(ev.title, ev.flyers[getIndex(ev.title)])" />
 
@@ -101,7 +101,7 @@
           <div class="relative overflow-hidden flex items-center justify-center"
                style="height:200px; background-color:#ffffff;">
 
-            <img [src]="ev.flyers[getIndex(ev.title)]" [alt]="ev.title"
+            <img loading="lazy" decoding="async" [src]="ev.flyers[getIndex(ev.title)]" [alt]="ev.title"
                  class="w-full h-full object-contain cursor-zoom-in transition-transform duration-300 group-hover:scale-[1.02]"
                  (click)="openModal(ev.title, ev.flyers[getIndex(ev.title)])" />
 

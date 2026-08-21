@@ -286,7 +286,7 @@
               <div class="w-full h-full rounded-full overflow-hidden border-4 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
                    style="background-color:#ffffff; border-color:#5DCAA5; box-shadow: 0 0 0 4px rgba(93,202,165,0.2);">
                 @if (member.photo) {
-                  <img [src]="member.photo" [alt]="member.name"
+                  <img loading="lazy" decoding="async" [src]="member.photo" [alt]="member.name"
                     class="w-full h-full object-cover"
                     [style.object-position]="getPhotoPos(member.photo)" />
                 } @else {
@@ -333,7 +333,7 @@
           <div class="group rounded-2xl p-6 flex flex-col items-center gap-3 transition-all duration-300 hover:scale-105 border" style="background-color:#085041; border-color:rgba(93,202,165,0.15);">
             <div class="w-16 h-16 rounded-full overflow-hidden border-2 flex items-center justify-center text-lg font-700" style="background-color:#ffffff; color:#085041; border-color:#1D9E75;">
               @if (member.photo) {
-                <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover" [style.object-position]="getPhotoPos(member.photo)" />
+                <img loading="lazy" decoding="async" [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover" [style.object-position]="getPhotoPos(member.photo)" />
               } @else {
                 {{ member.initials }}
               }
@@ -375,7 +375,7 @@
                   <div class="relative w-20 h-20 rounded-full overflow-hidden border-2 flex items-center justify-center transition-all duration-300 group-hover:scale-105"
                        style="background-color:#ffffff; border-color:#5DCAA5; box-shadow: 0 0 0 3px rgba(93,202,165,0.3);">
                     @if (member.photo) {
-                      <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover" [style.object-position]="getPhotoPos(member.photo)" />
+                      <img loading="lazy" decoding="async" [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover" [style.object-position]="getPhotoPos(member.photo)" />
                     } @else {
                       <svg viewBox="0 0 56 56" width="56" height="56" fill="none"><circle cx="28" cy="21" r="11" fill="#5DCAA5" opacity="0.6"/><path d="M6 52 C6 36 50 36 50 52" fill="#5DCAA5" opacity="0.4"/></svg>
                     }
@@ -393,7 +393,7 @@
                   <div class="w-14 h-14 rounded-full overflow-hidden border-2 flex items-center justify-center transition-all duration-300 group-hover:scale-110"
                        style="background-color:#ffffff; border-color:#1D9E75;">
                     @if (member.photo) {
-                      <img [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover" [style.object-position]="getPhotoPos(member.photo)" />
+                      <img loading="lazy" decoding="async" [src]="member.photo" [alt]="member.name" class="w-full h-full object-cover" [style.object-position]="getPhotoPos(member.photo)" />
                     } @else {
                       <svg viewBox="0 0 56 56" width="56" height="56" fill="none"><circle cx="28" cy="21" r="11" fill="#5DCAA5" opacity="0.6"/><path d="M6 52 C6 36 50 36 50 52" fill="#5DCAA5" opacity="0.4"/></svg>
                     }
@@ -427,7 +427,7 @@
     <div class="flex flex-wrap justify-center gap-6">
       @for (aliado of aliados; track aliado.name) {
         <div class="group flex items-center gap-3 bg-white rounded-2xl px-6 py-4 shadow-sm hover:shadow-md transition-all duration-200 hover:scale-105">
-          <img [src]="aliado.logo" [alt]="aliado.name" class="h-10 w-auto max-w-[120px] object-contain" />
+          <img loading="lazy" decoding="async" [src]="aliado.logo" [alt]="aliado.name" class="h-10 w-auto max-w-[120px] object-contain" />
         </div>
       }
     </div>
